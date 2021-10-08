@@ -1,13 +1,9 @@
 const navbar = document.getElementById("navbar");
 
-//lager et ul-element i navbar
-let ulist = document.createElement("ul");
-navbar.appendChild(ulist);
-
 const listelements = [
   {
-    src="img/others/logo.png",
-    text="CribAdvisor",
+    source: "img/others/logo.png",
+    text: "CribAdvisor",
   },
   {
     name: "Hjem",
@@ -26,6 +22,14 @@ const listelements = [
     link: "hybler.html",
   },
 ];
+
+//lager et ul-element i navbar
+let ulist = document.createElement("ul");
+navbar.appendChild(ulist);
+
+let logo = document.createElement("img");
+logo.src = listelements[0].source;
+navbar.appendChild(logo);
 
 for (let i = 1; i < listelements.length; i++) {
   let list = document.createElement("li");
