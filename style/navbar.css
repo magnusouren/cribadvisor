@@ -1,8 +1,29 @@
-#navbar {
-  height: 75px;
-  background-color: #c2efb3;
+nav {
+  min-height: 10vh;
+  background-color: rgb(141 199 194);
   width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
-* {
-  margin: 0px;
+nav div {
+  display: flex;
+  align-items: center;
+  color: #ebebeb;
+  letter-spacing: 3px;
+  font-size: 30px;
+}
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+}
+nav li {
+  list-style: none;
+}
+nav a {
+  color: #ebebeb;
+  text-decoration: none;
+  font-size: 24px;
+  letter-spacing: 1px;
 }
