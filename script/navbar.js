@@ -7,19 +7,19 @@ const listelements = [
   },
   {
     name: "Hjem",
-    link: "index.html",
+    link: "/index.html",
   },
   {
     name: "Hybler",
-    link: "hybler.html",
+    link: "/hybler.html",
   },
   {
     name: "Kontakt Oss",
-    link: "hybler.html",
+    link: "/kontakt-oss.html",
   },
   {
     name: "Legg til hybel",
-    link: "hybler.html",
+    link: "/legg-til-hybel.html",
   },
 ];
 
@@ -29,7 +29,7 @@ let logo = document.createElement("img");
 logo.src = listelements[0].source;
 container.appendChild(logo);
 
-let logoText = document.createElement("h1");
+let logoText = document.createElement("p");
 let textNode = document.createTextNode(listelements[0].text);
 logoText.appendChild(textNode);
 container.appendChild(logoText);
@@ -48,4 +48,25 @@ for (let i = 1; i < listelements.length; i++) {
   a.appendChild(content);
   list.appendChild(a);
   ulist.appendChild(list);
+}
+
+// let aTagHref = document
+//   .getElementById("navbar")
+//   .getElementsByTagName("a")[0]
+//   .getAttribute("href");
+
+const pathname = window.location.pathname;
+
+for (let i = 0; i < listelements.length - 1; i++) {
+  let aTagHref = document
+    .getElementById("navbar")
+    .getElementsByTagName("a")
+    [i].getAttribute("href");
+  if (aTagHref == pathname) {
+    document.getElementById("navbar").getElementsByTagName("a")[
+      i
+    ].style.textDecoration = "underline";
+    document.getElementById("navbar").getElementsByTagName("a")[i].style.color =
+      "#095256";
+  }
 }
