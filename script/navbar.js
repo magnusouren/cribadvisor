@@ -22,7 +22,7 @@ const listelements = [
     link: "/legg-til-hybel.html",
   },
 ];
-
+//legger til bilde og tekst til nav-bar
 let container = document.createElement("div");
 
 let logo = document.createElement("img");
@@ -40,6 +40,7 @@ navbar.appendChild(container);
 let ulist = document.createElement("ul");
 navbar.appendChild(ulist);
 
+//legger til alle sidene som li-elementer i ul-elementet
 for (let i = 1; i < listelements.length; i++) {
   let list = document.createElement("li");
   let a = document.createElement("a");
@@ -50,13 +51,10 @@ for (let i = 1; i < listelements.length; i++) {
   ulist.appendChild(list);
 }
 
-// let aTagHref = document
-//   .getElementById("navbar")
-//   .getElementsByTagName("a")[0]
-//   .getAttribute("href");
-
+//henter filnavnet på aktiv fil
 const pathname = window.location.pathname;
 
+//setter stil på aktiv lenke til mørkere med understrek
 for (let i = 0; i < listelements.length - 1; i++) {
   let aTagHref = document
     .getElementById("navbar")
