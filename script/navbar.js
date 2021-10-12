@@ -7,19 +7,19 @@ const listelements = [
   },
   {
     name: "Hjem",
-    link: "/index.html",
+    link: "index.html",
   },
   {
     name: "Hybler",
-    link: "/hybler.html",
+    link: "hybler.html",
   },
   {
     name: "Kontakt Oss",
-    link: "/kontakt-oss.html",
+    link: "kontakt-oss.html",
   },
   {
     name: "Legg til hybel",
-    link: "/legg-til-hybel.html",
+    link: "legg-til-hybel.html",
   },
 ];
 //legger til bilde og tekst til nav-bar
@@ -54,13 +54,14 @@ for (let i = 1; i < listelements.length; i++) {
 //henter filnavnet på aktiv fil
 const pathname = window.location.pathname;
 
+console.log("pathname", pathname);
 //setter stil på aktiv lenke til mørkere med understrek
 for (let i = 0; i < listelements.length - 1; i++) {
   let aTagHref = document
     .getElementById("navbar")
     .getElementsByTagName("a")
     [i].getAttribute("href");
-  if (aTagHref == pathname) {
+  if (pathname.includes(aTagHref)) {
     document.getElementById("navbar").getElementsByTagName("a")[
       i
     ].style.textDecoration = "underline";
