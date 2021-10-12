@@ -1,5 +1,5 @@
 nav {
-  min-height: 10vh;
+  height: 10vh;
   background-color: rgb(141 199 194);
   width: 100%;
   display: flex;
@@ -13,6 +13,9 @@ nav div {
   letter-spacing: 3px;
   font-size: 30px;
 }
+nav img {
+  height: 10vh;
+}
 nav ul {
   display: flex;
   justify-content: space-around;
@@ -25,9 +28,28 @@ nav a {
   color: #ebebeb;
   text-decoration: none;
   font-size: 24px;
-  letter-spacing: 1px;
+  letter-spacing: normal;
+  cursor: pointer;
 }
 nav li :hover {
   color: #253257;
+  text-shadow: 1px 1px dimgray; 
 }
-/*09.10*/
+@media only screen and (max-width: 1024px) {
+  /* Endre stil i forhold til bredde*/
+  nav ul {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 850px) {
+  /* Endre stil i forhold til bredde*/
+  nav ul {
+    width: 100%;
+  }
+  nav div {
+    display: none;
+  }
+  body {
+    overflow-x:hidden;
+  }
+}
