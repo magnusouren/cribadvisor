@@ -5,3 +5,13 @@
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 /**/
+.cirkle {
+  height: 400px;
+  width: 400px;
+  background-color: #c2efb3;
+  border-radius: 200px;
+  position: absolute;
+  right: -100px;
+  top: 1150px;
+  z-index: -1;
+}
