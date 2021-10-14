@@ -9,19 +9,22 @@ body {
 }
 /**/
 .cirkle {
-  height: 500px;
-  width: 500px;
-  border-radius: 250px;
   position: absolute;
   z-index: -1;
 }
 .low {
   background-color: #c2efb3;
-  right: -150px;
-  top: 1150px;
+  right: 0px;
+  top: 1050px;
+  height: 500px;
+  width: 500px;
+  border-radius: 250px;
 }
 .high {
   background-color: #c2efb3;
   left: -150px;
   top: 400px;
+  height: 500px;
+  width: 500px;
+  border-radius: 250px;
 }
