@@ -38,6 +38,9 @@ article img {
     width: 45%;
     height: auto;
 }
+.imgSmallscreen {
+    display: none;
+}
 h2 {
     font-size: 45px;
     line-height: 40px;
@@ -67,11 +70,21 @@ footer {
             display: block;
         }
         .content {
-            width: 100%;
+            width: 95%;
+            margin-left: 2.5%;
+            margin-right: 2.5%;
             padding: 0px;
         }
-        article img {
+        .cirkle {
+            display: none;
+        }
+        .imgBigscreen {
+            display: none;
+        }
+        .imgSmallscreen {
+            display: block;
             width: 100%;
+            margin-top: 50px;
         }
     }
 }
