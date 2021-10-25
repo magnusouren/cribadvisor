@@ -6,6 +6,6 @@ Live @ [Cribadvisor](https://magnusouren.github.io/cribadvisor/) ✨
 
 Under development.
 
-### Deploying
+## Deploying
 
 This project is deployed automatically using Github pages.
