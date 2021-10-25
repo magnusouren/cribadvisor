@@ -70,10 +70,12 @@ footer {
             display: block;
         }
         .content {
-            width: 95%;
-            margin-left: 2.5%;
-            margin-right: 2.5%;
+            width: 100%;
             padding: 0px;
+        }
+        .content p,
+        h2 {
+            margin: 2.5%;
         }
         .cirkle {
             display: none;
