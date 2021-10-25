@@ -13,3 +13,5 @@ This project is deployed automatically using Github pages.
 ## Made by
 
 * Isak
+
+* Tale
