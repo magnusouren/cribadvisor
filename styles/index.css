@@ -85,10 +85,20 @@ footer {
         display: none;
     }
     .imgSmallscreen {
-        display: block;
+        display: inline;
         width: 100%;
         margin-top: 50px;
     }
+    .imgSmallscreen img {
+        width: 100%;
+    }
+    .imgSmallscreen figcaption {
+        height: 25px;
+        margin-left: 2.5%;
+        color: grey;
+        font-style: italic;
+    }
+
     footer {
         margin-top: 50px;
     }
