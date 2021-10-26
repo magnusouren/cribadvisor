@@ -47,8 +47,8 @@ article h2 {
 }
 
 .imgBigscreen {
-    width: 45%;
-    height: auto;
+    width: 417px;
+    /* max-height: 250px; */
 }
 .imgSmallscreen {
     display: none;
@@ -93,7 +93,7 @@ footer {
         width: 100%;
         margin-top: 50px;
     }
-    .imgSmallscreen img {
+    .imgSmallscreen {
         width: 100%;
     }
     .imgSmallscreen figcaption {
@@ -105,5 +105,16 @@ footer {
 
     footer {
         margin-top: 50px;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    section,
+    article {
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 90%;
+    }
+    .imgBigscreen {
+        width: 345px;
     }
 }
