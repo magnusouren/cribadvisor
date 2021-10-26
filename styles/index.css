@@ -93,7 +93,7 @@ footer {
         width: 100%;
         margin-top: 50px;
     }
-    .imgSmallscreen {
+    .imgSmallscreen img {
         width: 100%;
     }
     .imgSmallscreen figcaption {
@@ -107,7 +107,7 @@ footer {
         margin-top: 50px;
     }
 }
-@media only screen and (max-width: 1024px) {
+@media (min-width: 850px) and (max-width: 1024px) {
     section,
     article {
         margin-left: 5%;
