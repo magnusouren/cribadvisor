@@ -1,7 +1,5 @@
 #slideshow {
   width: 100%;
-  /* height: 400px; */
-  background-color: rgb(141 199 194);
   display: flex;
 }
 .imgSlideshow {
@@ -16,7 +14,7 @@ section {
 section h1 {
   letter-spacing: 3px;
   font-size: 5vw;
-  line-height: 100px;
+  line-height: 120px;
   font-weight: 300;
 }
 article {
@@ -48,7 +46,6 @@ article h2 {
 
 .imgBigscreen {
   width: 417px;
-  /* max-height: 250px; */
 }
 .imgSmallscreen {
   display: none;
@@ -64,51 +61,49 @@ footer {
   font-weight: 80;
 }
 @media only screen and (max-width: 850px) {
-  section {
+  section,
+  article {
     width: 95%;
     margin-left: 2.5%;
     margin-right: 2.5%;
   }
+
   section h1 {
     font-size: 7vw;
   }
+
   article {
-    width: 100%;
-    margin-left: 0%;
-    margin-right: 0%;
     display: block;
   }
+
+  article h2 {
+    font-size: 5vw;
+  }
+
+  .content p,
+  .content h2,
   .content {
     width: 100%;
     padding: 0px;
   }
-  .content p,
-  h2 {
-    margin: 2.5%;
-    width: 95%;
-  }
-  article h2 {
-    font-size: 5vw;
-  }
-  .cirkle {
-    display: none;
-  }
+
+  .cirkle,
   .imgBigscreen {
     display: none;
   }
+
   .imgSmallscreen {
     display: inline;
     width: 100%;
     margin-top: 50px;
   }
+
   .imgSmallscreen img {
-    width: 95%;
-    margin-left: 2.5%;
-    margin-right: 2.5%;
+    width: 100%;
   }
+
   .imgSmallscreen figcaption {
     height: 25px;
-    margin-left: 2.5%;
     padding-left: 1vw;
     color: grey;
     font-style: italic;
