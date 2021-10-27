@@ -1,3 +1,10 @@
+#slideshow {
+  width: 100%;
+  display: flex;
+}
+.imgSlideshow {
+  width: 100%;
+}
 section {
   width: 70%;
   margin-left: 15%;
@@ -6,14 +13,9 @@ section {
 }
 section h1 {
   letter-spacing: 3px;
-  font-size: 60px;
-  line-height: 100px;
-  font-weight: normal;
-}
-#slideshow {
-  width: 100%;
-  height: 400px;
-  background-color: rgb(141 199 194);
+  font-size: 5vw;
+  line-height: 120px;
+  font-weight: 300;
 }
 article {
   width: 65%;
@@ -24,28 +26,29 @@ article {
   margin-top: 80px;
 }
 .content {
-  /* height: 280px; */
   padding: 0px 10px;
   align-items: center;
   width: 45%;
   word-wrap: normal;
 }
+
 article p {
-  margin-top: 20px;
+  margin-top: 2vw;
   width: 100%;
   line-height: 24px;
 }
-article img {
-  /* width: 450px;
-  height: 300px; */
-  width: 45%;
-  height: auto;
-}
-h2 {
-  font-size: 45px;
+article h2 {
+  font-size: 3vw;
   line-height: 40px;
-  font-weight: normal;
+  font-weight: 500;
   letter-spacing: 0.5px;
+}
+
+.imgBigscreen {
+  width: 417px;
+}
+.imgSmallscreen {
+  display: none;
 }
 
 footer {
@@ -55,4 +58,72 @@ footer {
   padding-top: 40px;
   padding-bottom: 40px;
   color: gray;
+  font-weight: 80;
+}
+@media only screen and (max-width: 850px) {
+  section,
+  article {
+    width: 95%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+  }
+
+  section h1 {
+    font-size: 7vw;
+  }
+
+  article {
+    display: block;
+  }
+
+  article h2 {
+    font-size: 5vw;
+  }
+
+  .content p,
+  .content h2,
+  .content {
+    width: 100%;
+    padding: 0px;
+  }
+
+  .cirkle,
+  .imgBigscreen {
+    display: none;
+  }
+
+  .imgSmallscreen {
+    display: inline;
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  .imgSmallscreen img {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .imgSmallscreen figcaption {
+    height: 25px;
+    padding-left: 1vw;
+    color: grey;
+    font-style: italic;
+    font-size: 2.5vw;
+    font-weight: 200;
+  }
+
+  footer {
+    margin-top: 50px;
+  }
+}
+@media (min-width: 850px) and (max-width: 1024px) {
+  section,
+  article {
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+  }
+  .imgBigscreen {
+    width: 345px;
+  }
 }
