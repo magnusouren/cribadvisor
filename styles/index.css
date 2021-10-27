@@ -85,6 +85,7 @@ footer {
   .content p,
   h2 {
     margin: 2.5%;
+    width: 95%;
   }
   article h2 {
     font-size: 5vw;
