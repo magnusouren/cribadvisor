@@ -15,7 +15,7 @@ section {
 }
 section h1 {
     letter-spacing: 3px;
-    font-size: 60px;
+    font-size: 5vw;
     line-height: 100px;
     font-weight: normal;
 }
@@ -35,14 +35,14 @@ article {
 }
 
 article p {
-    margin-top: 20px;
+    margin-top: 2vw;
     width: 100%;
     line-height: 24px;
 }
 article h2 {
-    font-size: 45px;
+    font-size: 3vw;
     line-height: 40px;
-    font-weight: normal;
+    font-weight: 500;
     letter-spacing: 0.5px;
 }
 
@@ -61,12 +61,16 @@ footer {
     padding-top: 40px;
     padding-bottom: 40px;
     color: gray;
+    font-weight: 80;
 }
 @media only screen and (max-width: 850px) {
     section {
         width: 100%;
         margin-left: 0%;
         margin-right: 0%;
+    }
+    section h1 {
+        font-size: 7vw;
     }
     article {
         width: 100%;
@@ -81,6 +85,9 @@ footer {
     .content p,
     h2 {
         margin: 2.5%;
+    }
+    article h2 {
+        font-size: 5vw;
     }
     .cirkle {
         display: none;
