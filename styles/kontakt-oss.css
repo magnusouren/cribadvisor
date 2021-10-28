@@ -10,11 +10,25 @@ input {
     width: 150px;
     margin-left: 40%;
 }
-img {
+
+#realfagsbygget_map {
+    position: fixed;
     max-width: 100%;
     height: auto;
     width: 200px;
+    margin-left: 15%;
+    margin-top: 30%;
 }
+.Besøk oss {
+    position: fixed;
+    max-width: 100%;
+    height: auto;
+    margin-left: 30%;
+    margin-top: 30%;
+}
+
+
+
 footer {
     margin-top: 200px;
     width: 100%;
