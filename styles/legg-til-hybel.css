@@ -21,7 +21,18 @@ article input {
     font-size: 16px;
     transition: 0.2s;
     width: 20%;
+    margin-bottom: 20px;
 }
+
+div select {
+    list-style-type: none;
+    padding: 10px 6px 10px 20px;
+    background: #C8E2E3;
+    font-size: 16px;
+    transition: 0.2s;
+    width: 20%;
+}
+
 
 /* Inputfeltene skal legge seg under hverandre, ikke etter hverandre. 
 Fikse dette med CSS og ikke HTML */

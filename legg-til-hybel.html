@@ -12,20 +12,46 @@
   </head>
   <body>
     <nav id="navbar"></nav>
+
     <section>
       <p>Lyst til å bli en del av CribAdvisor sitt fellesskap? Fyll inn skjemaet under, og la oss komme på besøk!</p>
     </section>
     
-
-
     <article>
       <h1>Legg til din hybel</h1>
-      
+
       <input type="text" id="name" placeholder="Navn">
       <br>
       <input type="text" id="adress" placeholder="Adresse">
       <br>
-      <input type="text" id="category" placeholder="Kategori">
+      
+      <div class="search_categories">
+        <div class="select">
+           <select name="search_categories" id="search_categories">
+              <option value="1" selected="selected">Middag</option>
+              <option value="2">Vors</option>
+              <option value="3">Fest</option>
+              <option value="4">Nach</option>
+              <option value="5">Chillekveld</option>
+            </select>
+         </div>
+     </div>
+      
+      
+      
+      
+      
+      <!-- <label> 
+        <select name="choose_cathegory" id="category">
+          <option value="kategori" style="display: none;">Kategori</option>
+          <option value="vors">Vors</option>
+          <option value="fest">Fest</option>
+          <option value="nach">Nach</option>
+          <option value="frokost">Frokost</option>
+          <option value="chillekveld">Chillekveld</option>
+        </select>
+      </label>-->
+      
       <br>
       <input type="text" id="visit_time" placeholder="Når kan du ha besøk?">
       <br>
