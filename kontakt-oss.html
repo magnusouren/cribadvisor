@@ -32,7 +32,7 @@
     <nav id="navbar"></nav>
 
 
-    <div class="Kontakt_oss">
+    <div id="Kontakt_oss">
       <h1>Kontakt oss</h1>
       <input type="text" id="name" value="Navn" required>
       <input type="text" id="email" value="E-mail" required>
@@ -41,28 +41,24 @@
       <!-- buttonm type="button">Send</button> -->
     </div>
 
-    <div class="Besøk_oss">
-      <h2>Besøk oss</h2>
-      <p>A4 Realfagsbygget
-      <p>Høgskoleringen 5,</p>
-      <p>7034 Trondheim, </p>
-      <p>Norway</p>
+    <!-- <img src="img/others/realfagsbygget.png" alt="Realfagsbygget" id="realfagsbygget_map"> -->
+    <div id="Besøk_oss">
+      <div id="map"></div>
+      <div id="adresse">
+        <h2>Besøk oss</h2>
+        <p>A4 Realfagsbygget
+        <p>Høgskoleringen 5,</p>
+        <p>7034 Trondheim, </p>
+        <p>Norway</p>
+      </div>
     </div>
 
-    <!-- <img src="img/others/realfagsbygget.png" alt="Realfagsbygget" id="realfagsbygget_map"> -->
-    
-
-
-
-    
-    <script src="script/navbar.js"></script>
-    
-    <div id="map"></div>
     <footer>CribAdvisor - 2021 </footer>
-    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+      <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
     <script
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDD67r9-hLPtpjGPoGNEhoKbFL1TfhGeQM&callback=initMap&libraries=&v=weekly"
       async
     ></script>
+    <script src="script/navbar.js"></script>
   </body>
 </html>

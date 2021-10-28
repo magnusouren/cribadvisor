@@ -1,40 +1,56 @@
-.Kontakt_oss{
-    position: absolute;
-    margin-left: 60%;
-    width: 200px;
+#Kontakt_oss{
+    margin-left: 20%;
+    margin-right: 20%;
+    width: 60%;
+    padding-left: 550px;
     line-height: 100px;
     
-
-
+}
+div h1 {
+    font-weight: 400;
+    font-size: 50px;
 }
 input { 
     display: block;
-    line-height: 25px;
-    width: 200px;
+    line-height: 50px;
+    width: 300px;
+    margin-bottom: 20px;
+    border-radius:5px;
+    border-width: 1.5px;
+    font-size: 20px;
+
+    
     
 
 }
 #map {
-    height: 200px;
-    width: 200px;
-    margin-top: 50%;
+    height: 300px;
+    width: 300px;
+    margin-top: 0;
     margin-left: 10%;
-    margin-bottom: 10%;
+    margin-bottom: 0;
 }
-/* .realfagsbygget_map { */
+/* .realfagsbygget_map 
     position: fixed; 
     max-width: 100%;
     height: auto;
     width: 15px;
     margin-left: 15%;
     margin-top: 30%;
-}
-.Besøk_oss {
-    position: relative;
-    max-width: 100%;
+}{ */
+#Besøk_oss {
+    width: 60%;
     height: auto;
-    margin-left: 70%;
-    margin-top: 50%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 150px;
+    margin-left: 20%;
+    margin-right: 20%;
+    
+
+}
+#adresse p{
+    padding-top: 10px;
 }
 
 footer {
