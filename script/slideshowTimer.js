@@ -1,23 +1,27 @@
+//Definerer hvilke bilder som skal brukes
 const bilder = ["img1.jpg", "img2.jpg", "img3.jpg"];
 const imgSlide = document.getElementById("imgSlide");
 
-var i = 1;
-let x = 1;
+let i = 1;
+
+//Funk som endrer bildekilde og endrer opacity til 1
 function swapImg() {
+  //Om indeks er utenfor range starter på nytt
   if (i == bilder.length) {
     i = 0;
   }
+  //Bytter ut bile
   imgSlide.src = "img/test/" + bilder[i];
   imgSlide.style.opacity = 1;
   i++;
 }
+
+//Gir bildet opacity for å få overgang
 function fadeOut() {
   imgSlide.style.opacity = 0.5;
 }
-function fadeInn() {
-  imgSlide.style.opacity = 1;
-}
 
+//Kaller på funk hvert 5. sekund
 setInterval(fadeOut, 5000);
+//Venter i 5.5 sek, og kaller deretter på funk hvert 5 sek.
 setTimeout(() => setInterval(swapImg, 5000), 500);
-//setTimeout(fadeInn, 2000);
