@@ -65,9 +65,6 @@ for (let i = 0; i < listelements.length - 1; i++) {
     .getElementsByTagName("a")
     [i].getAttribute("href");
   if (pathname.includes(aTagHref)) {
-    /*document.getElementById("navbar").getElementsByTagName("a")[
-      i
-    ].style.textDecoration = "underline";*/
     document.getElementById("navbar").getElementsByTagName("a")[i].style.color =
       "#253257";
   }
