@@ -15,3 +15,7 @@ This project is deployed automatically using Github pages.
 * Isak
 
 * Tale
+
+* Ingrid 
+
+* Magnus 
