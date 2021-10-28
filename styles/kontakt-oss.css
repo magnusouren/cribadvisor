@@ -14,12 +14,18 @@ input {
     
 
 }
-
-#realfagsbygget_map {
-    position: fixed;
+#map {
+    height: 200px;
+    width: 200px;
+    margin-top: 50%;
+    margin-left: 10%;
+    margin-bottom: 10%;
+}
+/* .realfagsbygget_map { */
+    position: fixed; 
     max-width: 100%;
     height: auto;
-    width: 200px;
+    width: 15px;
     margin-left: 15%;
     margin-top: 30%;
 }

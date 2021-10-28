@@ -8,7 +8,26 @@
     <link rel="stylesheet" href="styles/navbar.css" />
     <link rel="stylesheet" href="styles/kontakt-oss.css" />
     <title>CribAdvisor</title>
+
+    <script>
+      // Initialize and add the map
+      function initMap() {
+        // The location of Realfagsbygget
+        const realfagsbygget = { lat: 63.415372, lng: 10.406507 };
+        // The map, centered at Realfagsbygget
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 4,
+          center: realfagsbygget,
+        });
+        // The marker, positioned at Uluru
+        const marker = new google.maps.Marker({
+          position: realfagsbygget,
+          map: map,
+        });
+      }
+    </script>
   </head>
+
   <body>
     <nav id="navbar"></nav>
 
@@ -30,11 +49,20 @@
       <p>Norway</p>
     </div>
 
-    <img src="img/others/realfagsbygget.png" alt="Realfagsbygget" id="realfagsbygget_map">
-    <footer>CribAdvisor - 2021 </footer>
+    <!-- <img src="img/others/realfagsbygget.png" alt="Realfagsbygget" id="realfagsbygget_map"> -->
+    
 
 
 
+    
     <script src="script/navbar.js"></script>
+    
+    <div id="map"></div>
+    <footer>CribAdvisor - 2021 </footer>
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDD67r9-hLPtpjGPoGNEhoKbFL1TfhGeQM&callback=initMap&libraries=&v=weekly"
+      async
+    ></script>
   </body>
 </html>
