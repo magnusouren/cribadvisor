@@ -1,5 +1,5 @@
 nav {
-  height: 10vh;
+  height: 8vh;
   background-color: rgb(141 199 194);
   width: 100%;
   display: flex;
@@ -12,10 +12,10 @@ nav div {
   color: #ebebeb;
   letter-spacing: 3px;
   font-weight: 200;
-  font-size: 3vw;
+  font-size: 2vw;
 }
 nav img {
-  height: 10vh;
+  height: 8vh;
 }
 nav ul {
   display: flex;
@@ -28,7 +28,7 @@ nav li {
 nav a {
   color: #ebebeb;
   text-decoration: none;
-  font-size: 2vw;
+  font-size: 1.5vw;
   font-weight: 250;
   letter-spacing: normal;
   cursor: pointer;
