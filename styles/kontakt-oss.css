@@ -9,7 +9,7 @@
 div h1 {
     font-weight: 400;
     font-size: 50px;
-    color: rgb(97, 189, 189);
+    color: #0F7E85;
 }
 input { 
     display: block;
@@ -19,7 +19,7 @@ input {
     border-radius:5px;
     border-width: 1.5px;
     font-size: 20px;
-    background-color: rgba(158, 219, 221, 0.5);
+    background-color: rgb(141 199 194);
 
     
     
@@ -50,7 +50,11 @@ input {
     margin-right: 20%;
 }
 #Besøk_oss h2 {
-    color: rgb(97, 189, 189);
+    font-weight: 300;
+    font-size: 30px;
+    color: #0F7E85;
+
+
 
 }
 #adresse p{
