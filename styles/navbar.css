@@ -1,5 +1,5 @@
 nav {
-  height: 10vh;
+  height: 8vh;
   background-color: rgb(141 199 194);
   width: 100%;
   display: flex;
@@ -11,10 +11,11 @@ nav div {
   align-items: center;
   color: #ebebeb;
   letter-spacing: 3px;
-  font-size: 30px;
+  font-weight: 200;
+  font-size: 2vw;
 }
 nav img {
-  height: 10vh;
+  height: 8vh;
 }
 nav ul {
   display: flex;
@@ -27,18 +28,22 @@ nav li {
 nav a {
   color: #ebebeb;
   text-decoration: none;
-  font-size: 24px;
+  font-size: 1.5vw;
+  font-weight: 250;
   letter-spacing: normal;
   cursor: pointer;
 }
 nav li :hover {
   color: #253257;
-  text-shadow: 1px 1px dimgray; 
+  text-shadow: 1px 1px dimgray;
 }
-@media only screen and (max-width: 1024px) {
+@media (min-width: 850px) and (max-width: 1024px) {
   /* Endre stil i forhold til bredde*/
   nav ul {
     width: 50%;
+  }
+  nav a {
+    font-size: 3vh;
   }
 }
 @media only screen and (max-width: 850px) {
@@ -50,6 +55,9 @@ nav li :hover {
     display: none;
   }
   body {
-    overflow-x:hidden;
+    overflow-x: hidden;
+  }
+  nav a {
+    font-size: 20px;
   }
 }
