@@ -23,5 +23,5 @@ function fadeOut() {
 
 //Kaller på funk hvert 5. sekund
 setInterval(fadeOut, 5000);
-//Venter i 5.5 sek, og kaller deretter på funk hvert 5 sek.
-setTimeout(() => setInterval(swapImg, 5000), 500);
+//Venter i 5.8 sek, og kaller deretter på funk hvert 5 sek.
+setTimeout(() => setInterval(swapImg, 5000), 800);
