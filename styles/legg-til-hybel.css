@@ -12,6 +12,8 @@ section p {
 /* Legge header lenger ned */
 article h1 {
     color: #0F7E85;
+    margin-top: 70px;
+    margin-bottom: 20px;
 }
 
 article input {
@@ -26,7 +28,7 @@ article input {
 
 div select {
     list-style-type: none;
-    padding: 10px 6px 10px 20px;
+    padding: 10px 6px 10px 30px;
     background: #C8E2E3;
     font-size: 16px;
     transition: 0.2s;
