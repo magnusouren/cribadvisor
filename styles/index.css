@@ -4,6 +4,7 @@
 }
 .imgSlideshow {
   width: 100%;
+  transition: 0.8s ease-in all;
 }
 section {
   width: 70%;
