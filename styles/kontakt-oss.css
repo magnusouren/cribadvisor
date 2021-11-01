@@ -44,10 +44,10 @@ input {
     border-width: 1.5px;
     font-size: 20px;
     background-color: rgb(141 199 194);
-
+}
+#message {
+    height: 200px;
     
-    
-
 }
 #map {
     height: 300px;
