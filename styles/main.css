@@ -7,6 +7,15 @@
 body {
   overflow-x: hidden;
 }
+footer {
+  margin-top: 200px;
+  width: 100%;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  color: gray;
+  font-weight: 80;
+}
 /**/
 .cirkle {
   position: absolute;
