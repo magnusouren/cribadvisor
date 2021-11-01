@@ -9,7 +9,12 @@ section p {
     margin-top: 20px;
     
 }
-/* Legge header lenger ned */
+article {
+    text-align: 50px;
+    position: relative;
+    left: 50px;
+}
+
 article h1 {
     color: #0F7E85;
     margin-top: 70px;
@@ -37,7 +42,49 @@ div .select{
     font-size: 20px;
     background-color: rgb(141 199 194);
 }
+label {
+    display: block;
+    line-height: 50px;
+    width: 300px;
+    margin-bottom: 20px;
+    border-radius:5px;
+    border-width: 1.5px;
+    font-size: 20px;
+    background-color: rgb(141 199 194);
+}
+#circle_top_right {
+    background-color: #C2EFB3;
+    right: 0px;
+    top: 1050px;
+    height: 350px;
+    width: 350px;
+    border-radius: 250px;
+    margin-left: 10%;
+    margin-top: 10%;
+}
 
+#circle_underneath_right {
+    background-color: #1eb4b473;
+    right: 0px;
+    top: 1050px;
+    height: 300px;
+    width: 300px;
+    border-radius: 250px;
+    margin-left: 220px;
+    margin-top: 100px;
+    margin-top: -410px;
+}
+
+#circle_bottom_left {
+    background-color: #C2EFB3;
+    right: 0px;
+    top: 1050px;
+    height: 350px;
+    width: 350px;
+    border-radius: 250px;
+    margin-left: 80%;
+    margin-top: -200px;
+}
 /*#search_cathegories {
     display: block;
     line-height: 50px;
@@ -57,3 +104,4 @@ footer {
     padding-bottom: 40px;
     color: gray;
 }
+
