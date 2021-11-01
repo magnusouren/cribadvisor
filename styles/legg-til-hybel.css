@@ -49,11 +49,11 @@ div .select{
     background-color: rgb(141 199 194);
 }*/
 
-/* Inputfeltene skal legge seg under hverandre, ikke etter hverandre. 
-Fikse dette med CSS og ikke HTML */
-
-
-
-
-/* Inputfeltet må styles */
-
+footer {
+    margin-top: 0px;
+    width: 100%;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color: gray;
+}
