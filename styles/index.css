@@ -53,15 +53,25 @@ article h2 {
 .imgSmallscreen {
   display: none;
 }
-
-footer {
-  margin-top: 200px;
-  width: 100%;
-  text-align: center;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  color: gray;
-  font-weight: 80;
+.cirkle {
+  position: absolute;
+  z-index: -1;
+}
+.low {
+  background-color: #c2efb3;
+  right: 0px;
+  top: 1050px;
+  height: 500px;
+  width: 500px;
+  border-radius: 250px;
+}
+.high {
+  background-color: #c2efb3;
+  left: -150px;
+  top: 400px;
+  height: 500px;
+  width: 500px;
+  border-radius: 250px;
 }
 @media only screen and (max-width: 850px) {
   section,
