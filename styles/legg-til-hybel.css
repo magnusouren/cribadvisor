@@ -61,9 +61,14 @@ label {
     border-width: 1.5px;
     font-size: 20px;
     background-color: rgb(141 199 194);
-
 }
 
+button {
+    margin-bottom: 10px;
+    color: white;
+    background-color: #253257;
+    padding: ;
+}
 #circle_top_right {
     background-color: #C2EFB3;
     right: 0px;
