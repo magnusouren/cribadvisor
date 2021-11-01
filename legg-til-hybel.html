@@ -17,36 +17,40 @@
       <p>Lyst til å bli en del av CribAdvisor sitt fellesskap? Fyll inn skjemaet under, og la oss komme på besøk!</p>
     </section>
     
-    <img src="img/others/testbilde.jpg" alt="Bilde av hybel">
+    
 
     <article>
-      <h1>Legg til din hybel</h1>
+      <div id="inputs">
+        <h1>Legg til din hybel</h1>
+        <input type="text" id="name" placeholder="Navn">
+        <input type="text" id="adress" placeholder="Adresse">
+      
 
-      <input type="text" id="name" placeholder="Navn">
-      
-      <input type="text" id="adress" placeholder="Adresse">
-      
-      <div class="dropdown_list">
-        <div class="select">
-           <select name="search_categories" id="search_categories">kategori
-              <option value="1" selected="selected" default disabled>Kategori</option>
-              <option value="2">Middag</option>
-              <option value="3">Vors</option>
-              <option value="4">Fest</option>
-              <option value="5">Nach</option>
-              <option value="6">Chillekveld</option>
-            </select>
-         </div>
-     </div>
+        <div class="dropdown_list">
+          <div class="select">
+            <select name="search_categories" id="search_categories">kategori
+                <option value="1" selected="selected" default disabled>Kategori</option>
+                <option value="2">Middag</option>
+                <option value="3">Vors</option>
+                <option value="4">Fest</option>
+                <option value="5">Nach</option>
+                <option value="6">Chillekveld</option>
+              </select>
+          </div>
+        </div>
 
-      <p>Når kan du ha besøk?</p>
-      <input type="date" id="visit_time" placeholder="Når kan du ha besøk?">
-      
-      <div for="image">Legg til bilder av din hybel</div>
-      
-      <input type="file" class="add_image">
-      <br>
-      <button type="submit" id="send_form">Send</button>
+        <p>Når kan du ha besøk?</p>
+        <input type="date" id="visit_time" placeholder="Når kan du ha besøk?">
+        
+        <div for="image">Legg til bilder av din hybel</div>
+        
+        <input type="file" class="add_image">
+        
+        <button type="submit" id="send_form">Send</button>
+      </div>
+      <div>
+        <img id="picture" src="img/others/testbilde.jpg" alt="Bilde av hybel">
+      </div>
     </article>
   
     <figure id=circle_top_right></figure>

@@ -9,9 +9,12 @@ section p {
     margin-top: 20px;
 }
 article {
-    text-align: 100px;
-    margin-left: 20%;
+    /* text-align: 100px; */
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
     margin-top: 50px;
+    display: flex;
 }
 
 article h1 {
@@ -65,13 +68,16 @@ input {
     color: gray;
 }
 
-img {
+#inputs {
+    width: 50%;
+    margin-left:10%;
+}
+#picture {
     padding: 10px;
-    width: 300px;
+    width: 500px;
     height: auto;
-    position: absolute;
-    right: 10px;
-    bottom: 100px;
+    margin-top: 90px;
+    margin-left: 0%;
 }
 
 .add_image::-webkit-file-upload-button {
@@ -114,7 +120,7 @@ button {
     width: 150px;
     margin-bottom: 20px;
     line-height: 40px;
-    
+    font-size: 25px;
 }
 
 #circle_top_right {
