@@ -20,7 +20,6 @@ function swapImg() {
 function fadeOut() {
   imgSlide.style.opacity = 0.5;
 }
-
 window.onload = function () {
   //Kaller på funk hvert 5. sekund
   setInterval(fadeOut, 5000);
