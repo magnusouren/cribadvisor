@@ -113,22 +113,14 @@ input {
     background-color: rgb(141 199 194);
     color: gray
 
-<<<<<<< HEAD
 }*/
-=======
-}
->>>>>>> 1a93f452d6cb20c21bcbbc98d11f2c1f17c4b283
 button {
     color: white;
     background-color: #253257;
     width: 150px;
     margin-bottom: 20px;
     line-height: 40px;
-<<<<<<< HEAD
     font-size: 25px;
-=======
-
->>>>>>> 1a93f452d6cb20c21bcbbc98d11f2c1f17c4b283
 }
 
 #circle_top_right {
@@ -160,21 +152,6 @@ button {
     width: 300px;
     left: -100px;
     border-radius: 250px;
-<<<<<<< HEAD
     z-index: -1;
 }
 
-=======
-    
-}
-
-/*footer {
-    margin-top: 0px;
-    width: 100%;
-    text-align: center;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    color: gray;
-}*/
-
->>>>>>> 1a93f452d6cb20c21bcbbc98d11f2c1f17c4b283
