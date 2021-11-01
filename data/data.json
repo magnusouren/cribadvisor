@@ -1,0 +1,21 @@
+[
+  {
+    "name": "Ravens Nest",
+    "address": "Kirkegata 61A",
+    "capasity": 16,
+    "events": ["Fest", "Grilling", "Spillkveld"],
+    "about": "YO! Jeg tilbyr fest, spillkveld og grillkveld. Alle er velkommen, håper du vil komme innom :)",
+    "ratings": {
+      "numberOfRatings": 8,
+      "people": 2,
+      "appearence": 4,
+      "location": 5
+    },
+    "images": [
+      {
+        "src": "/img/kirkegata/grilling.png",
+        "imageText": "Grillen fyrt opp og klar for mat"
+      }
+    ]
+  }
+]
