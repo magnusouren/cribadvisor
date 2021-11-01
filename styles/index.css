@@ -5,6 +5,8 @@
 .imgSlideshow {
   width: 100%;
   transition: 0.8s ease-in all;
+  height: 400px;
+  object-fit: cover;
 }
 section {
   width: 70%;
