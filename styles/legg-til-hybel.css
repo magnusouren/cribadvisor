@@ -48,10 +48,6 @@ select {
     color: gray
 }
 
-input {
-    color: gray
-}
-
 label {
     display: block;
     line-height: 50px;
@@ -63,12 +59,39 @@ label {
     background-color: rgb(141 199 194);
 }
 
+input {
+    color: gray;
+}
+
+#add_image {
+    /*cursor: pointer;
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;*/
+    
+    appearance: none;
+    outline: 0; 
+    position: relative;
+    display: inline-block;
+    line-height: 50px;
+    width: 300px;
+    margin-bottom: 15px;
+    border-radius:5px;
+    border-width: 1.5px;
+    font-size: 20px;
+    background-color: rgb(141 199 194);
+    color: gray
+
+}
 button {
-    margin-bottom: 10px;
     color: white;
     background-color: #253257;
-    padding: ;
+    width: 150px;
+    margin-bottom: 20px;
+    line-height: 40px;
+
 }
+
+
 #circle_top_right {
     background-color: #C2EFB3;
     right: 0px;
