@@ -7,12 +7,12 @@ section p {
     font-style: italic;
     text-align: center;
     margin-top: 20px;
-    
 }
 article {
     text-align: 50px;
     position: relative;
     left: 50px;
+    top: 100px;
 }
 
 article h1 {
@@ -25,23 +25,33 @@ article input {
     display: block;
     line-height: 50px;
     width: 300px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     border-radius:5px;
     border-width: 1.5px;
     font-size: 20px;
     background-color: rgb(141 199 194);
+
 }
 
-div .select{
-    display: block;
+select {
+    appearance: none;
+    outline: 0; 
+    position: relative;
+    display: inline-block;
     line-height: 50px;
     width: 300px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     border-radius:5px;
     border-width: 1.5px;
     font-size: 20px;
     background-color: rgb(141 199 194);
+    color: gray
 }
+
+input {
+    color: gray
+}
+
 label {
     display: block;
     line-height: 50px;
@@ -51,7 +61,9 @@ label {
     border-width: 1.5px;
     font-size: 20px;
     background-color: rgb(141 199 194);
+
 }
+
 #circle_top_right {
     background-color: #C2EFB3;
     right: 0px;
