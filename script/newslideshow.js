@@ -1,9 +1,11 @@
 import { fetchData } from "./common.js";
 
+//Henter ut data fra json-fil ved hjelp av funksjon i common
 async function getData() {
   const data = await fetchData();
 
-  let counter = 0;
+  //Kaller på funksjon til å bytte bilde hvert 5. sekund
+  let counter = 1;
   setTimeout(
     () =>
       setInterval(() => {
@@ -20,12 +22,18 @@ async function getData() {
 
 function swapImg(data) {
   let slideshow = document.getElementById("imgSlide");
-  console.log(data.images[0].src);
+
   slideshow.src = data.images[0].src;
-  imgSlide.style.opacity = 1;
+  fadeInn();
+}
+
+function fadeInn() {
+  let slideshow = document.getElementById("imgSlide");
+  slideshow.style.opacity = 1;
 }
 function fadeOut() {
-  imgSlide.style.opacity = 0.5;
+  let slideshow = document.getElementById("imgSlide");
+  slideshow.style.opacity = 0.5;
 }
 
 getData();
