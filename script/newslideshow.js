@@ -1,6 +1,6 @@
 import { fetchData } from "./common.js";
 
-async function createListOfDorms() {
+async function getData() {
   const data = await fetchData();
 
   let counter = 0;
@@ -17,7 +17,7 @@ async function createListOfDorms() {
     800
   );
 }
-createListOfDorms();
+getData();
 function swapImg(data) {
   let slideshow = document.getElementById("imgSlide");
   console.log(data.images[0].src);
