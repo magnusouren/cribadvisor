@@ -17,7 +17,7 @@ async function getData() {
     800
   );
 }
-getData();
+
 function swapImg(data) {
   let slideshow = document.getElementById("imgSlide");
   console.log(data.images[0].src);
@@ -27,4 +27,7 @@ function swapImg(data) {
 function fadeOut() {
   imgSlide.style.opacity = 0.5;
 }
+
+getData();
+
 setInterval(fadeOut, 5000);
