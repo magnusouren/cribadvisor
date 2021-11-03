@@ -1,7 +1,7 @@
 import { fetchData } from './common.js';
-// Henter ut data fra json-fil ved hjelp av funksjon i common
 
 function startImageSlideshow() {
+  // Henter ut data fra js-fil ved hjelp av funksjon i common
   const data = fetchData();
   let slideshow = document.getElementById('imgSlide');
 
