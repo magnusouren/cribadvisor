@@ -1,6 +1,5 @@
-export async function fetchData() {
-  const response = await fetch('/data/data.json');
-  const data = await response.json();
+import { data } from '../data/data.js';
 
+export function fetchData() {
   return data;
 }

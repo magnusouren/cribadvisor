@@ -1,9 +1,9 @@
-import { fetchData } from "./common.js";
-// Henter ut data fra json-fil ved hjelp av funksjon i common
+import { fetchData } from './common.js';
 
-async function startImageSlideshow() {
-  const data = await fetchData();
-  let slideshow = document.getElementById("imgSlide");
+function startImageSlideshow() {
+  // Henter ut data fra js-fil ved hjelp av funksjon i common
+  const data = fetchData();
+  let slideshow = document.getElementById('imgSlide');
 
   let counter = 1;
   setInterval(() => {
