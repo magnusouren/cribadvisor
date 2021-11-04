@@ -14,7 +14,7 @@ export const data = [
     },
     images: [
       {
-        src: '/img/kirkegata/grille.jpg',
+        src: 'img/kirkegata/grille.jpg',
         imageText: 'Grillen fyrt opp og klar for mat',
       },
     ],
@@ -34,7 +34,7 @@ export const data = [
     },
     images: [
       {
-        src: '/img/lerkendal/stue.png',
+        src: 'img/lerkendal/stue.png',
         imageText: 'Kose med mange sittemuligheter',
       },
     ],
