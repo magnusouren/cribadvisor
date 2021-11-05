@@ -12,13 +12,27 @@
   </head>
   <body>
     <nav id="navbar"></nav>
-    <h1>Våre hybler</h1>
-    <p>
-      Her finner du en oversikt over hybler du kan besøke. Hvis du ønsker å
-      legge ut din egen hybel for åpent for besøk, gå til
-      <a href="/legg-til-hybel.html">Legg til hybel</a> siden.
-    </p>
-    <section id="hybler"></section>
+    <div class="top-text-container">
+      <h1>Våre hybler</h1>
+      <p id="top-text">
+        Her finner du en oversikt over hybler du kan besøke. Hvis du ønsker å
+        legge ut din egen hybel for åpent for besøk, gå til
+        <a href="/legg-til-hybel.html">Legg til hybel</a> siden.
+      </p>
+    </div>
+
+    <section id="hybler">
+      <div class="figure-container">
+        <figure class="circle top"></figure>
+        <figure class="circle bottom"></figure>
+        <figure class="circle bottom blue"></figure>
+      </div>
+    </section>
+
+    <footer>
+      <p>CribAdvisor - 2021</p>
+    </footer>
+
     <script src="script/navbar.js"></script>
     <script type="module" src="script/hybler.js"></script>
   </body>

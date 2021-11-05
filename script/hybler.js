@@ -21,6 +21,7 @@ function createDormAddress(container, address) {
 
 function createEventList(container, events) {
   let eventListContainer = document.createElement('div');
+  eventListContainer.className = 'event-list-container';
   let eventListHeader = document.createElement('p');
   eventListHeader.innerHTML = 'Tilbyr:';
   eventListContainer.appendChild(eventListHeader);
@@ -37,8 +38,21 @@ function createEventList(container, events) {
 
 function createDormRatings(container, ratings) {
   let dormRatings = document.createElement('p');
+  dormRatings.className = 'dorm-ratings';
   dormRatings.innerHTML = `${ratings.numberOfRatings} vurderinger`;
   container.appendChild(dormRatings);
+}
+
+function createDormTextContent(container, name, address, events, ratings) {
+  let textContentContainer = document.createElement('div');
+  textContentContainer.className = 'text-content-container';
+
+  createDormName(textContentContainer, name);
+  createDormAddress(textContentContainer, address);
+  createEventList(textContentContainer, events);
+  createDormRatings(textContentContainer, ratings);
+
+  container.appendChild(textContentContainer);
 }
 
 function createButton(container) {
@@ -59,13 +73,11 @@ function createDorm(dorm) {
   const { name, address, capasity, events, about, ratings, images } = dorm;
 
   let container = document.createElement('div');
-  container.className = 'container';
+  container.className = 'dorm-container';
 
   createDormImage(container, images);
-  createDormName(container, name);
-  createDormAddress(container, address);
-  createEventList(container, events);
-  createDormRatings(container, ratings);
+  createDormTextContent(container, name, address, events, ratings);
+
   createButton(container);
 
   document.getElementById('hybler').appendChild(container);

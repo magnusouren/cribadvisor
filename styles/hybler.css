@@ -1,3 +1,132 @@
+section#hybler {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.figure-container {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.top-text-container {
+  width: 700px;
+  margin: 0 auto;
+  margin-top: 16px;
+  margin-bottom: 32px;
+}
+
+h1 {
+  font-weight: normal;
+}
+
+p#top-text {
+  color: #333;
+}
+
+.dorm-container {
+  position: relative;
+  width: 600px;
+  height: 250px;
+  margin: 0 auto;
+  margin-bottom: 48px;
+}
+
+.text-content-container {
+  margin-left: 358px;
+  height: 100%;
+  position: relative;
+}
+
 img.dorm-image {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 350px;
+  height: 250px;
+  object-fit: cover;
+}
+
+h2 {
+  font-weight: normal;
+  font-size: 20px;
+  color: #333;
+}
+
+h3 {
+  font-weight: normal;
+  color: #878787;
+  font-size: 14px;
+}
+
+.event-list-container {
+  color: #333;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+li {
+  margin-left: 16px;
+}
+
+p.dorm-ratings {
+  position: absolute;
+  bottom: 0px;
+  color: #878787;
+  font-size: 14px;
+}
+
+button {
+  position: absolute;
+  bottom: -16px;
+  left: -16px;
+  background-color: #253257;
+  color: white;
+  padding: 12px 16px;
+  border: none;
+  box-shadow: 0px 0px 4px #00000029;
+  font-size: 18px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.circle {
+  position: absolute;
+  z-index: -1;
+  border-radius: 50%;
+}
+
+.top {
+  background-color: #c2efb3;
+  left: -200px;
+  top: 0px;
+  height: 400px;
+  width: 400px;
+}
+
+.bottom {
+  background-color: #c2efb3;
+  right: -100px;
+  top: 400px;
+  height: 300px;
   width: 300px;
+}
+
+.bottom.blue {
+  background-color: #09525699;
+  right: -100px;
+  top: 300px;
+  height: 200px;
+  width: 200px;
+  border-radius: 250px;
 }
