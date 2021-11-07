@@ -6,14 +6,14 @@ import {
 } from './hyblerComponents.js';
 
 function createDorm(dorm) {
-  const { name, address, capasity, events, about, ratings, images } = dorm;
+  const { name, address, capasity, events, ratings, images } = dorm;
 
   let container = document.createElement('div');
   container.className = 'dorm-container';
 
   createDormImage(container, images);
   createDormTextContent(container, name, address, events, ratings);
-  createButton(container);
+  createButton(container, name);
 
   document.getElementById('hybler').appendChild(container);
 }
