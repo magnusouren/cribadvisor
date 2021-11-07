@@ -41,13 +41,11 @@ function fadeOut(slideshow) {
 
 function createButton() {
   let slideshow = document.getElementById("slideshow");
-  let button = document.createElement("button");
+  let button = document.createElement("a");
   button.innerHTML = "Se Hybler";
-  button.addEventListener("click", hyblerLink);
+  button.href = "hybler.html";
+  button.className = "buttonHybler";
   slideshow.appendChild(button);
-}
-function hyblerLink() {
-  window.location = "hybler.html";
 }
 
 startImageSlideshow();
