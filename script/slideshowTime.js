@@ -5,7 +5,7 @@ function startImageSlideshow() {
   const data = fetchData();
   let slideshow = document.getElementById("imgSlide");
 
-  createButton(slideshow);
+  createButton();
 
   let counter = 1;
   setInterval(() => {
