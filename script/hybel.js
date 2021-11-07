@@ -45,6 +45,7 @@ function createDormImage(container, images) {
 
 function createHostSection(container, host) {
   let hostContainer = document.createElement('div');
+  hostContainer.className = 'host-container';
 
   let hostImage = document.createElement('img');
   hostImage.src = host.image;
@@ -58,13 +59,18 @@ function createHostSection(container, host) {
   aboutHostText.innerHTML = host.about;
   hostContainer.appendChild(aboutHostText);
 
+  let buttonsContainer = document.createElement('div');
+  buttonsContainer.className = 'buttons-container';
+
   let contactButton = document.createElement('button');
   contactButton.innerHTML = 'Kontakt';
-  hostContainer.appendChild(contactButton);
+  buttonsContainer.appendChild(contactButton);
 
   let giveRatingButton = document.createElement('button');
   giveRatingButton.innerHTML = 'Gi vurdering';
-  hostContainer.appendChild(giveRatingButton);
+  buttonsContainer.appendChild(giveRatingButton);
+
+  hostContainer.appendChild(buttonsContainer);
 
   let divider = document.createElement('hr');
   hostContainer.appendChild(divider);
@@ -75,6 +81,7 @@ function createHostSection(container, host) {
 function createAboutSection(container, dorm) {
   const { address, capasity, events, ratings } = dorm;
   let aboutSectionContainer = document.createElement('div');
+  aboutSectionContainer.className = 'about-container';
 
   let aboutHeading = document.createElement('h2');
   aboutHeading.innerHTML = 'Om hybelen';
@@ -119,6 +126,7 @@ function createRatings(ratingsContainer, name, numberOfStars) {
       { eng: 'location', nor: 'Beligenhet' },
     ];
     let ratingContainer = document.createElement('div');
+    ratingsContainer.className = 'ratings-container';
 
     let ratingText = document.createElement('h3');
     ratingText.innerHTML = engToNorMap.find((names) => names.eng === name).nor;

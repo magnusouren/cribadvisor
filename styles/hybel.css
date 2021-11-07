@@ -1,0 +1,150 @@
+section#container {
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 16px;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: normal;
+}
+
+p.dorm-ratings {
+  color: #878787;
+  margin-bottom: 8px;
+}
+
+img.dorm-image {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  margin-bottom: 32px;
+}
+
+.host-container {
+  position: relative;
+  height: 140px;
+}
+
+.host-container img {
+  float: left;
+  width: 108px;
+  margin-right: 8px;
+}
+
+.host-container h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.host-container p {
+  width: 500px;
+  font-size: 18px;
+}
+
+.host-container .buttons-container {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.host-container hr {
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  margin-bottom: 16px;
+}
+
+button {
+  display: block;
+  background-color: #253257;
+  color: white;
+  padding: 12px 16px;
+  border: none;
+  box-shadow: 0px 0px 4px #00000029;
+  font-size: 18px;
+  width: 140px;
+  margin-bottom: 16px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.about-container {
+  float: left;
+  margin-left: 32px;
+}
+
+.about-container h2 {
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.about-container p {
+  position: relative;
+}
+
+.about-container p ul {
+  position: absolute;
+  left: 70px;
+  top: 0px;
+}
+
+.ratings-container {
+  float: right;
+  margin-right: 32px;
+}
+
+.ratings-container h2 {
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.ratings-container h3 {
+  font-weight: normal;
+}
+
+.ratings-container img {
+  width: 30px;
+}
+
+.figure-container {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.circle {
+  position: absolute;
+  z-index: -1;
+  border-radius: 50%;
+}
+
+.top {
+  background-color: #c2efb3;
+  left: -200px;
+  top: 0px;
+  height: 400px;
+  width: 400px;
+}
+
+.bottom {
+  background-color: #c2efb3;
+  right: -100px;
+  top: 400px;
+  height: 300px;
+  width: 300px;
+}
+
+.bottom.blue {
+  background-color: #09525699;
+  right: -100px;
+  top: 300px;
+  height: 200px;
+  width: 200px;
+  border-radius: 250px;
+}
