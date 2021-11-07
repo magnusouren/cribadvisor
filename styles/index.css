@@ -17,7 +17,7 @@ section {
 }
 section h1 {
   letter-spacing: 3px;
-  font-size: 5vw;
+  font-size: 4vw;
   line-height: 120px;
   font-weight: 300;
 }
@@ -44,7 +44,7 @@ article p {
 article h2 {
   font-size: 3vw;
   line-height: 40px;
-  font-weight: 500;
+  font-weight: 300;
   letter-spacing: 0.5px;
 }
 
