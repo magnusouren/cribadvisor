@@ -1,0 +1,157 @@
+
+/* Få liten tekst øverst sentrert og i liten kursiv skrift. */
+section p {
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    font-style: italic;
+    text-align: center;
+    margin-top: 20px;
+}
+article {
+    /* text-align: 100px; */
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 50px;
+    display: flex;
+}
+
+article h1 {
+    font-weight: 400;
+    font-size: 50px;
+    color: #0F7E85; 
+    line-height: 100px;
+}
+
+article input {
+    display: block;
+    line-height: 50px;
+    padding-left: 10px;
+    width: 300px;
+    margin-bottom: 15px;
+    border-radius:5px;
+    border-width: 1.5px;
+    font-size: 20px;
+    background-color: rgb(141 199 194);
+
+}
+
+select {
+    appearance: none;
+    outline: 0; 
+    position: relative;
+    display: inline-block;
+    padding-left: 10px;
+    line-height: 50px;
+    width: 312px;
+    margin-bottom: 15px;
+    border-radius:5px;
+    border-width: 1.5px;
+    font-size: 20px;
+    background-color: rgb(141 199 194);
+    color: gray
+}
+
+label {
+    display: block;
+    line-height: 50px;
+    width: 300px;
+    margin-bottom: 20px;
+    border-radius:5px;
+    border-width: 1.5px;
+    font-size: 20px;
+    background-color: rgb(141 199 194);
+}
+
+input {
+    color: gray;
+}
+
+#inputs {
+    width: 50%;
+    margin-left:10%;
+}
+#picture {
+    padding: 10px;
+    width: 500px;
+    height: auto;
+    margin-top: 90px;
+    margin-left: 0%;
+}
+
+.add_image::-webkit-file-upload-button {
+    visibility: hidden;
+}
+.add_image::before {
+    content: "Legg til fil";
+    display: inline-block;
+    background-color: rgb(141 199 194);
+    padding: 5px 8px;
+    outline: none;
+    white-space: nowrap;
+    /*-webkit-user-select: none;*/
+    /*cursor: pointer;*/
+    font-weight: 700;
+    font-size: 10pt;
+}
+
+.add_image:active::before {
+    background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+}
+/*#add_image {
+    appearance: none;
+    outline: 0; 
+    position: relative;
+    display: inline-block;
+    line-height: 50px;
+    width: 300px;
+    margin-bottom: 15px;
+    border-radius:5px;
+    border-width: 1.5px;
+    font-size: 20px;
+    background-color: rgb(141 199 194);
+    color: gray
+
+}*/
+button {
+    color: white;
+    background-color: #253257;
+    width: 150px;
+    margin-bottom: 20px;
+    line-height: 40px;
+    font-size: 25px;
+}
+
+#circle_top_right {
+    background-color: #1eb4b473;
+    position: absolute;
+    right: 10px;
+    bottom: 230px;
+    height: 200px;
+    width: 200px;
+    border-radius: 150px;
+    z-index: -2;
+}
+
+#circle_upper_left {
+    background-color: #C2EFB3;
+    position: absolute;
+    height: 250px;
+    width: 250px;
+    border-radius: 225px;
+    top: 300px;
+    right: 80px;
+    z-index: -1;
+}
+#circle_underneath_right {
+    background-color: #C2EFB3;
+    position: absolute;
+    top: 500px;
+    height: 300px;
+    width: 300px;
+    left: -100px;
+    border-radius: 250px;
+    z-index: -1;
+}
+
