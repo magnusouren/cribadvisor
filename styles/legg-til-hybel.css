@@ -20,7 +20,7 @@ article {
 article h1 {
   font-weight: 400;
   color: black;
-  line-height: 100px;
+  margin-bottom: 16px;
   font-size: 32px;
 }
 
@@ -34,6 +34,7 @@ article input {
   border-width: 1.5px;
   font-size: 20px;
   border: 1px solid #e8e4e4;
+  background-color: white;
 }
 
 select {
@@ -86,10 +87,15 @@ input {
   padding: 10px;
   width: 500px;
   height: auto;
-  margin-top: 90px;
+  margin-top: 44px;
   margin-left: 0%;
 }
 
+@media only screen and (max-width: 1070px) {
+  #picture {
+    display: none;
+  }
+}
 .add_image::-webkit-file-upload-button {
   visibility: hidden;
 }
