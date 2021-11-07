@@ -1,5 +1,5 @@
 nav {
-  height: 8vh;
+  height: 64px;
   background-color: rgb(141 199 194);
   width: 100%;
   display: flex;
@@ -9,10 +9,9 @@ nav {
 nav div {
   display: flex;
   align-items: center;
-  color: #ebebeb;
   letter-spacing: 3px;
   font-weight: 200;
-  font-size: 2vw;
+  font-size: 24px;
 }
 nav img {
   height: 8vh;
@@ -28,22 +27,24 @@ nav li {
 nav a {
   color: #ebebeb;
   text-decoration: none;
-  font-size: 1.5vw;
+  font-size: 24px;
   font-weight: 250;
   letter-spacing: normal;
   cursor: pointer;
 }
-nav li :hover {
-  color: #253257;
-  text-shadow: 1px 1px dimgray;
+
+nav a.selected {
+  color: white;
 }
+
+nav li :hover {
+  color: white;
+}
+
 @media (min-width: 850px) and (max-width: 1024px) {
   /* Endre stil i forhold til bredde*/
   nav ul {
     width: 50%;
-  }
-  nav a {
-    font-size: 3vh;
   }
 }
 @media only screen and (max-width: 850px) {
