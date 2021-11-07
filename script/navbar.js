@@ -57,8 +57,8 @@ for (let i = 1; i < listelements.length; i++) {
 //henter filnavnet på aktiv fil
 const pathname = window.location.pathname;
 
-//setter stil på aktiv lenke til mørkere med understrek
-for (let i = 0; i < listelements.length - 1; i++) {
+//setter stil på aktiv lenke
+for (let i = 1; i < listelements.length; i++) {
   let aTagHref = document
     .getElementById('navbar')
     .getElementsByTagName('a')
