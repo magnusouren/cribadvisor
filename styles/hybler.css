@@ -40,7 +40,9 @@ p#top-text {
   height: 100%;
   position: relative;
 }
-
+.text-content-container {
+  padding-left: 10px;
+}
 img.dorm-image {
   position: absolute;
   top: 0px;
@@ -70,6 +72,8 @@ h3 {
 
 ul {
   margin: 0px;
+  margin-left: 4px;
+  margin-top: 5px;
   padding: 0px;
 }
 
