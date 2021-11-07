@@ -1,3 +1,5 @@
+import { slugifyText } from './common.js';
+
 export function createDormImage(container, images) {
   let img = document.createElement('img');
   img.src = images[0].src;
@@ -57,13 +59,6 @@ export function createDormTextContent(
   createDormRatings(textContentContainer, ratings);
 
   container.appendChild(textContentContainer);
-}
-
-function slugifyText(text) {
-  return text
-    .toLowerCase()
-    .replace(/ /g, '-')
-    .replace(/[^\w-]+/g, '');
 }
 
 export function createButton(container, dormName) {

@@ -6,7 +6,7 @@ import {
 } from './hyblerComponents.js';
 
 function createDorm(dorm) {
-  const { name, address, capasity, events, about, ratings, images } = dorm;
+  const { name, address, capasity, events, ratings, images } = dorm;
 
   let container = document.createElement('div');
   container.className = 'dorm-container';
