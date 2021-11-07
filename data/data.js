@@ -1,7 +1,7 @@
 export const data = [
   {
-    name: "Ravens Nest",
-    address: "Kirkegata 61A",
+    name: 'Ravens Nest',
+    address: 'Kirkegata 61A',
     capasity: 16,
     events: ['Fest', 'Grilling', 'Spillkveld'],
     ratings: {
@@ -12,8 +12,8 @@ export const data = [
     },
     images: [
       {
-        src: "img/kirkegata/grille.jpg",
-        imageText: "Grillen fyrt opp og klar for mat",
+        src: 'img/kirkegata/grille.jpg',
+        imageText: 'Grillen fyrt opp og klar for mat',
       },
     ],
     host: {
@@ -24,12 +24,10 @@ export const data = [
     },
   },
   {
-    name: "Tales crib",
-    address: "Kirkegata 46A",
+    name: 'Tales crib',
+    address: 'Kirkegata 46A',
     capasity: 8,
-    events: ["Fest", "Middag", "Quiz"],
-    about:
-      "Kom og besøk oss på Møllenberg, vi er en hyggelig gjeng som gjerne ønsker besøk fra deg!",
+    events: ['Fest', 'Middag', 'Quiz'],
     ratings: {
       numberOfRatings: 5,
       people: 5,
@@ -38,14 +36,24 @@ export const data = [
     },
     images: [
       {
-        src: "img/kirkegata/grille.jpg",
-        imageText: "Grillen fyrt opp og klar for mat",
+        src: 'img/tale/tale1.jpg',
+        imageText: 'Fasaden av heimen',
+      },
+      {
+        src: 'img/tale/tale2.jpg',
+        imageText: 'Her er stua',
       },
     ],
+    host: {
+      name: 'Tale Eikenes',
+      about:
+        'Kom og besøk oss på Møllenberg, vi er en hyggelig gjeng som gjerne ønsker besøk fra deg!',
+      image: 'img/tale/tale.png',
+    },
   },
   {
-    name: "Lerkendals heaven",
-    address: "Klæbuveien 126",
+    name: 'Lerkendals heaven',
+    address: 'Klæbuveien 126',
     capasity: 20,
     events: ['Fest', 'Spillkveld', 'Middag'],
     ratings: {
@@ -56,12 +64,8 @@ export const data = [
     },
     images: [
       {
-        src: "img/tale/tale1.jpg",
-        imageText: "Alltid velkommen inn!",
-      },
-      {
-        src: "img/tale/tale2.jpg",
-        imageText: "Koselig stue",
+        src: 'img/lerkendal/stue.png',
+        imageText: 'Vår vakre stue',
       },
     ],
     host: {
