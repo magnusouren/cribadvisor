@@ -85,12 +85,13 @@ button:hover {
 
 .about-container p {
   position: relative;
+  line-height: 25px;
 }
 
 .about-container p ul {
   position: absolute;
-  left: 70px;
-  top: 0px;
+  left: 28px;
+  top: 25px;
 }
 
 .ratings-container {
