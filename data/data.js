@@ -4,8 +4,6 @@ export const data = [
     address: 'Kirkegata 61A',
     capasity: 16,
     events: ['Fest', 'Grilling', 'Spillkveld'],
-    about:
-      'YO! Jeg tilbyr fest, spillkveld og grillkveld. Alle er velkommen, håper du vil komme innom :)',
     ratings: {
       numberOfRatings: 8,
       people: 2,
@@ -18,14 +16,18 @@ export const data = [
         imageText: 'Grillen fyrt opp og klar for mat',
       },
     ],
+    host: {
+      name: 'Isak Solheim',
+      about:
+        'YO! Jeg tilbyr fest, spillkveld og grillkveld. Alle er velkommen, håper du vil komme innom :)',
+      image: 'img/kirkegata/isak.png',
+    },
   },
   {
     name: 'Lerkendals heaven',
     address: 'Klæbuveien 126',
     capasity: 20,
     events: ['Fest', 'Spillkveld', 'Middag'],
-    about:
-      'Hos oss er det alltid åpen dør for en liten fest, middag eller hva det skal være. Vi er 6 boys som tar livet som det faller seg og stresser ikke med noe',
     ratings: {
       numberOfRatings: 4,
       people: 2,
@@ -38,5 +40,11 @@ export const data = [
         imageText: 'Kose med mange sittemuligheter',
       },
     ],
+    host: {
+      name: 'Magnus Ouern',
+      about:
+        'Hos oss er det alltid åpen dør for en liten fest, middag eller hva det skal være. Vi er 6 boys som tar livet som det faller seg og stresser ikke med noe',
+      image: 'img/lerkendal/ouern.png',
+    },
   },
 ];

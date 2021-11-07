@@ -1,3 +1,5 @@
+import { slugifyText } from './common.js';
+
 export function createDormImage(container, images) {
   let img = document.createElement('img');
   img.src = images[0].src;
@@ -59,8 +61,14 @@ export function createDormTextContent(
   container.appendChild(textContentContainer);
 }
 
-export function createButton(container) {
+export function createButton(container, dormName) {
+  let linkWrapper = document.createElement('a');
   let button = document.createElement('button');
+
+  const slugifiedName = slugifyText(dormName);
   button.innerHTML = 'Se Hybel';
-  container.appendChild(button);
+  linkWrapper.href = `/hybel.html?dormName=${slugifiedName}`;
+
+  linkWrapper.appendChild(button);
+  container.appendChild(linkWrapper);
 }
