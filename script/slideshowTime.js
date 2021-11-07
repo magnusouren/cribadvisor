@@ -43,7 +43,11 @@ function createButton() {
   let slideshow = document.getElementById("slideshow");
   let button = document.createElement("button");
   button.innerHTML = "Se Hybler";
+  button.addEventListener("click", hyblerLink);
   slideshow.appendChild(button);
+}
+function hyblerLink() {
+  window.location = "hybler.html";
 }
 
 startImageSlideshow();
