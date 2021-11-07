@@ -13,7 +13,7 @@ function createDorm(dorm) {
 
   createDormImage(container, images);
   createDormTextContent(container, name, address, events, ratings);
-  createButton(container);
+  createButton(container, name);
 
   document.getElementById('hybler').appendChild(container);
 }
