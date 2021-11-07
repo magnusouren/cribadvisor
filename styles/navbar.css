@@ -5,6 +5,7 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  box-shadow: 0 0px 6px 0px rgb(180, 180, 180);
 }
 nav div {
   display: flex;

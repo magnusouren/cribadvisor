@@ -88,6 +88,7 @@ button {
   position: absolute;
   bottom: -16px;
   left: -16px;
+  box-shadow: 0 0px 6px 0px rgb(180, 180, 180);
 }
 
 .circle {

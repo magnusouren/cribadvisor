@@ -78,9 +78,9 @@ article h2 {
 }
 .button-hybler {
   position: absolute;
-  width: 200px;
   bottom: -20px;
-  right: -60px;
+  right: -16px;
+  box-shadow: 0 0px 6px 0px rgb(180, 180, 180);
 }
 @media only screen and (max-width: 850px) {
   section,
