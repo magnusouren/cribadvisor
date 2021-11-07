@@ -88,16 +88,6 @@ button {
   position: absolute;
   bottom: -16px;
   left: -16px;
-  background-color: #253257;
-  color: white;
-  padding: 12px 16px;
-  border: none;
-  box-shadow: 0px 0px 4px #00000029;
-  font-size: 18px;
-}
-
-button:hover {
-  cursor: pointer;
 }
 
 .circle {

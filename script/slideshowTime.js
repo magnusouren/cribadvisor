@@ -1,11 +1,9 @@
-import { fetchData } from "./common.js";
+import { fetchData } from './common.js';
 
 function startImageSlideshow() {
   // Henter ut data fra js-fil ved hjelp av funksjon i common
   const data = fetchData();
-  let slideshow = document.getElementById("imgSlide");
-
-  createButton();
+  let slideshow = document.getElementById('imgSlide');
 
   let counter = 1;
   setInterval(() => {
@@ -37,15 +35,6 @@ function fadeIn(slideshow) {
 }
 function fadeOut(slideshow) {
   slideshow.style.opacity = 0.5;
-}
-
-function createButton() {
-  let slideshow = document.getElementById("slideshow");
-  let button = document.createElement("a");
-  button.innerHTML = "Se Hybler";
-  button.href = "hybler.html";
-  button.className = "buttonHybler";
-  slideshow.appendChild(button);
 }
 
 startImageSlideshow();
