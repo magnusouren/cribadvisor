@@ -24,6 +24,34 @@ export const data = [
     },
   },
   {
+    name: 'Tales crib',
+    address: 'Kirkegata 46A',
+    capasity: 8,
+    events: ['Fest', 'Middag', 'Quiz'],
+    ratings: {
+      numberOfRatings: 5,
+      people: 5,
+      appearence: 3,
+      location: 5,
+    },
+    images: [
+      {
+        src: 'img/tale/tale1.jpg',
+        imageText: 'Fasaden av heimen',
+      },
+      {
+        src: 'img/tale/tale2.jpg',
+        imageText: 'Her er stua',
+      },
+    ],
+    host: {
+      name: 'Tale Eikenes',
+      about:
+        'Kom og besøk oss på Møllenberg, vi er en hyggelig gjeng som gjerne ønsker besøk fra deg!',
+      image: 'img/tale/tale.png',
+    },
+  },
+  {
     name: 'Lerkendals heaven',
     address: 'Klæbuveien 126',
     capasity: 20,
@@ -37,7 +65,7 @@ export const data = [
     images: [
       {
         src: 'img/lerkendal/stue.png',
-        imageText: 'Kose med mange sittemuligheter',
+        imageText: 'Vår vakre stue',
       },
     ],
     host: {
