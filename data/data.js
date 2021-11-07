@@ -44,7 +44,7 @@ export const data = [
       name: 'Magnus Ouern',
       about:
         'Hos oss er det alltid åpen dør for en liten fest, middag eller hva det skal være. Vi er 6 boys som tar livet som det faller seg og stresser ikke med noe',
-      image: 'img/magnus.jpg',
+      image: 'img/lerkendal/ouern.png',
     },
   },
 ];
