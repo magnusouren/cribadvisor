@@ -168,3 +168,29 @@ button:hover {
   background-color: white;
   border: solid 1px black;
 }
+#closePopup {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 32px;
+  height: 32px;
+  opacity: 0.3;
+}
+#closePopup:hover {
+  opacity: 1;
+}
+#closePopup:before,
+#closePopup:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 33px;
+  width: 2px;
+  background-color: #333;
+}
+#closePopup:before {
+  transform: rotate(45deg);
+}
+#closePopup:after {
+  transform: rotate(-45deg);
+}
