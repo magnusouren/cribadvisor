@@ -1,4 +1,4 @@
-function getHeight() {
+function getHeightOfContent() {
   let body = document.body;
   let html = document.documentElement;
 
@@ -16,7 +16,7 @@ function getHeight() {
 function addBackground() {
   let background = document.createElement("div");
   background.id = "popupBackground";
-  background.style.height = getHeight() + "px";
+  background.style.height = getHeightOfContent() + "px";
 
   document.body.appendChild(background);
 }
@@ -27,7 +27,7 @@ function addDiv() {
   document.body.appendChild(div);
 }
 
-function popup() {
+function createPopup() {
   addBackground();
   addDiv();
 }
@@ -36,6 +36,6 @@ window.onload = function () {
   let ratingButton = document.getElementById("ratingButton");
   let contactButton = document.getElementById("contactButton");
 
-  ratingButton.addEventListener("click", popup);
-  contactButton.addEventListener("click", popup);
+  ratingButton.addEventListener("click", createPopup);
+  contactButton.addEventListener("click", createPopup);
 };
