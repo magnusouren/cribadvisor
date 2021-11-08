@@ -9,7 +9,26 @@
     <link rel="stylesheet" href="styles/navbar.css" />
     <link rel="stylesheet" href="styles/kontakt-oss.css" />
     <title>CribAdvisor</title>
+
+    <script>
+      // Initialize and add the map
+      function initMap() {
+        // The location of Realfagsbygget
+        const realfagsbygget = { lat: 63.415372, lng: 10.406507 };
+        // The map, centered at Realfagsbygget
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 4,
+          center: realfagsbygget,
+        });
+        // The marker, positioned at Uluru
+        const marker = new google.maps.Marker({
+          position: realfagsbygget,
+          map: map,
+        });
+      }
+    </script>
   </head>
+
   <body>
     <nav id="navbar"></nav>
 
@@ -33,6 +52,45 @@
     <img src="img/others/realfagsbygget.png" alt="Realfagsbygget" />
     <footer>CribAdvisor - 2021</footer>
 
+    <div id=circle_left></div>
+    <div id=circle_right></div>
+
+    <!-- <figure id="cirkle_left"></figure>
+    <figure id="cirkle_right"></figure>  -->
+
+    <div id="Kontakt_oss">
+      <h1>Kontakt oss</h1>
+      <input type="email" id="name" placeholder="Navn" required>
+      <input type="text" id="email" placeholder="E-mail" required>
+      <textarea id="message" placeholder="Melding" required></textarea>
+      <button type="submit" id=button>Send</button>
+      <!-- buttonm type="button">Send</button> -->
+    </div>
+
+    <!-- <figure id="cirkle_high"></figure> -->
+    <!-- <figure id="cirkle_low"></figure> -->
+    
+
+    <!-- <img src="img/others/realfagsbygget.png" alt="Realfagsbygget" id="realfagsbygget_map"> -->
+    <div id="Besøk_oss">
+      <div id="map"></div>
+      <div id="adresse">
+        <h2>Besøk oss</h2>
+        <p>A4 Realfagsbygget
+        <p>Høgskoleringen 5,</p>
+        <p>7034 Trondheim, </p>
+        <p>Norway</p>
+      </div>
+    </div>
+
+    <div id=circle_bottom></div>
+
+    <footer>CribAdvisor - 2021 </footer>
+      <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDD67r9-hLPtpjGPoGNEhoKbFL1TfhGeQM&callback=initMap&libraries=&v=weekly"
+      async
+    ></script>
     <script src="script/navbar.js"></script>
   </body>
 </html>
