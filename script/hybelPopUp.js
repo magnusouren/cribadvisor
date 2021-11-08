@@ -62,9 +62,23 @@ function displayPopup() {
   background.style.display = 'block';
 }
 
+function createContent() {
+  // Bruk denne for å sette inn innhold
+  let popupContent = document.getElementById('popupContent'); // Det under denne linja kan fjernes
+
+  let h1 = document.createElement('h1');
+  h1.innerText = 'test';
+
+  let p = document.createElement('p');
+  p.innerText = 'Her kommer det tekst';
+
+  popupContent.appendChild(h1);
+  popupContent.appendChild(p);
+}
 function createPopup() {
   if (document.body.contains(document.getElementById('popupDiv'))) {
     displayPopup();
+    createContent();
   } else {
     addBackground();
     let background = document.getElementById('popupBackground');
@@ -77,6 +91,7 @@ function createPopup() {
 
     addContent(popup);
     addEvtLstClosePopUp(cross, popup, background);
+    createContent();
   }
 }
 
