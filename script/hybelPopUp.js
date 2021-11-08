@@ -41,16 +41,29 @@ function exitPopup() {
   popup.style.display = 'none';
   background.style.display = 'none';
 }
+
 function addEvtLstClosePopUp() {
   let cross = document.getElementById('closePopup');
   cross.addEventListener('click', exitPopup);
 }
 
+function displayPopup() {
+  let popup = document.getElementById('popupDiv');
+  let background = document.getElementById('popupBackground');
+
+  popup.style.display = 'block';
+  background.style.display = 'block';
+}
+
 function createPopup() {
-  addBackground();
-  addDiv();
-  addCross();
-  addEvtLstClosePopUp();
+  if (document.body.contains(document.getElementById('popupDiv'))) {
+    displayPopup();
+  } else {
+    addBackground();
+    addDiv();
+    addCross();
+    addEvtLstClosePopUp();
+  }
 }
 
 window.onload = function () {
