@@ -148,3 +148,23 @@ button:hover {
   width: 200px;
   border-radius: 250px;
 }
+/* --------- */
+#popupBackground {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #09525699;
+}
+
+#popupDiv {
+  height: 60%;
+  width: 50%;
+  position: absolute;
+  left: 25%;
+  top: 25%;
+  background-color: white;
+  border: solid 1px black;
+}
