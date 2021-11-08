@@ -63,26 +63,19 @@ input, #message{
     border-radius:5px;
     border-width: 1.5px;
     font-size: 20px;
-    /* background-color: #0F7E85; */
     background-color: #253257;
     color: white;
+    cursor: pointer;
 }
 #map {
     height: 300px;
     width: 300px;
     margin-top: 0;
     margin-left: -100px;
-    /* margin-bottom: -100px; */
+    
 }
-/* .realfagsbygget_map 
-    position: fixed; 
-    max-width: 100%;
-    height: auto;
-    width: 15px;
-    margin-left: 15%;
-    margin-top: 30%;
-}{ */
-#Besøk_oss {
+
+#besok_oss {
     width: 60%;
     height: auto;
     display: flex;
@@ -91,7 +84,7 @@ input, #message{
     margin-left: 15%;
     margin-right: 20%;
 }
-#Besøk_oss h2 {
+#besok_oss h2 {
     font-weight: 300;
     font-size: 30px;
     color: #0F7E85;
