@@ -1,34 +1,43 @@
 function validateInput() { 
-    let nameInput = document.getElementById('name').value;
-    let emailInput = document.getElementById('email').value;
-    let messageInput = document.getElementById('message').value;
+  const nameInput = document.getElementById('name').value;
+  const emailInput = document.getElementById('email').value;
+  const messageInput = document.getElementById('message').value;
 
-    validateName(nameInput);
-    validateEmail(emailInput);
-    validateMessage(messageInput);
+  const validName = validateName(nameInput);
+  const validEmail = validateEmail(emailInput);
+  const validMessage = validateMessage(messageInput);
+
+  if (validName && validEmail && validMessage) {
+    alert("Takk for din melding!")
+  }
 }
 
 function validateName(name) {
-    if (name.length === 0) {
-        alert("Skriv inn navnet ditt");
-    }
+  if (name.length === 0) {
+    alert("Skriv inn navnet ditt");
+    return false;
+  }
+  return true;
 }
 
 function validateEmail(email) {
-    const emailRegex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    const isEmail = emailRegex.test(email.toLowerCase());
+  const emailRegex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  const isEmail = emailRegex.test(email.toLowerCase());
 
-    if (isEmail === false) {
-        alert("Skriv inn en godkjent email adresse");
-    }
+  if (isEmail === false) {
+    alert("Skriv inn en godkjent email adresse");
+    return false;
+  }
+  return true;
 }
 
 function validateMessage(message) {
-    if (message.length === 0) {
-        alert("Skriv inn melding");
-    } else if (message.length > 300) {
-        alert("Meldingen din er for lang");
-    }
+  if (message.length === 0) {
+    alert("Skriv inn melding");
+    return false;
+  } else if (message.length > 300) {
+    alert("Meldingen din er for lang");
+    return false;
+  }
+  return true;
 }
-
-
