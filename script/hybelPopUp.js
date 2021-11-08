@@ -23,28 +23,35 @@ function addBackground() {
 function addDiv() {
   let div = document.createElement('div');
   div.id = 'popupDiv';
+
   document.body.appendChild(div);
 }
 
-function addCross() {
-  let div = document.getElementById('popupDiv');
-
+function addCross(popup) {
   let cross = document.createElement('a');
   cross.id = 'closePopup';
 
-  div.appendChild(cross);
+  popup.appendChild(cross);
 }
-function exitPopup() {
-  let popup = document.getElementById('popupDiv');
-  let background = document.getElementById('popupBackground');
+function addContent(popup) {
+  let content = document.createElement('div');
+  content.id = 'popupContent'; // Henvis til denne ID-en for å legge til innhold
 
+  popup.appendChild(content);
+}
+
+function exitPopup(popup, background) {
+  let content = document.getElementById('popupContent');
+
+  content.innerHTML = '';
   popup.style.display = 'none';
   background.style.display = 'none';
 }
 
-function addEvtLstClosePopUp() {
-  let cross = document.getElementById('closePopup');
-  cross.addEventListener('click', exitPopup);
+function addEvtLstClosePopUp(cross, popup, background) {
+  cross.addEventListener('click', function () {
+    exitPopup(popup, background);
+  });
 }
 
 function displayPopup() {
@@ -60,9 +67,16 @@ function createPopup() {
     displayPopup();
   } else {
     addBackground();
+    let background = document.getElementById('popupBackground');
+
     addDiv();
-    addCross();
-    addEvtLstClosePopUp();
+    let popup = document.getElementById('popupDiv');
+
+    addCross(popup);
+    let cross = document.getElementById('closePopup');
+
+    addContent(popup);
+    addEvtLstClosePopUp(cross, popup, background);
   }
 }
 
