@@ -29,16 +29,28 @@ function addDiv() {
 function addCross() {
   let div = document.getElementById('popupDiv');
 
-  let cross = document.createElement('b');
+  let cross = document.createElement('a');
   cross.id = 'closePopup';
 
   div.appendChild(cross);
+}
+function exitPopup() {
+  let popup = document.getElementById('popupDiv');
+  let background = document.getElementById('popupBackground');
+
+  popup.style.display = 'none';
+  background.style.display = 'none';
+}
+function addEvtLstClosePopUp() {
+  let cross = document.getElementById('closePopup');
+  cross.addEventListener('click', exitPopup);
 }
 
 function createPopup() {
   addBackground();
   addDiv();
   addCross();
+  addEvtLstClosePopUp();
 }
 
 window.onload = function () {
