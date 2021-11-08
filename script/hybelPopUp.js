@@ -27,12 +27,15 @@ function addDiv() {
   document.body.appendChild(div);
 }
 
-function ratings() {
+function popup() {
   addBackground();
   addDiv();
 }
 
 window.onload = function () {
-  let buttons = document.getElementById("rating");
-  buttons.addEventListener("click", ratings);
+  let ratingButton = document.getElementById("ratingButton");
+  let contactButton = document.getElementById("contactButton");
+
+  ratingButton.addEventListener("click", popup);
+  contactButton.addEventListener("click", popup);
 };
