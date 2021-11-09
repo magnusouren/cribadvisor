@@ -202,12 +202,16 @@ button:hover {
   font-size: 30px;
   letter-spacing: 1px;
   font-weight: 500;
+  margin-bottom: 15px;
 }
 .pop-up-data {
-  line-height: 80px;
+  line-height: 50px;
   font-size: 22px;
 }
 .pop-up-data b {
   margin-right: 20px;
   font-weight: 450;
+}
+.row-of-stars {
+  line-height: 10px;
 }
