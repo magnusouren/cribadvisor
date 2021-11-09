@@ -36,11 +36,13 @@ img.dorm-image {
   font-size: 24px;
   font-weight: 600;
   margin-bottom: 4px;
+  margin-left: 125px;
 }
 
 .host-container p {
   width: 500px;
   font-size: 18px;
+  margin-left: 125px;
 }
 
 .host-container .buttons-container {
@@ -85,12 +87,13 @@ button:hover {
 
 .about-container p {
   position: relative;
+  line-height: 25px;
 }
 
 .about-container p ul {
   position: absolute;
-  left: 70px;
-  top: 0px;
+  left: 28px;
+  top: 25px;
 }
 
 .ratings-container {
