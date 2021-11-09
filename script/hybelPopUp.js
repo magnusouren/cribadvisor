@@ -70,9 +70,9 @@ function createRating(container, dorm) {
 }
 
 function createContent(container, dorm, buttonName) {
-  if (buttonName == 'contact') {
+  if (buttonName === 'contact') {
     createContact(container, dorm);
-  } else if ((buttonName = 'rating')) {
+  } else if (buttonName === 'rating') {
     createRating(container, dorm);
   }
 }
