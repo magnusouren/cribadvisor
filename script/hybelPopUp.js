@@ -32,6 +32,10 @@ window.onload = function () {
   let ratingButton = document.getElementById('ratingButton');
   let contactButton = document.getElementById('contactButton');
 
-  ratingButton.addEventListener('click', createPopup);
-  contactButton.addEventListener('click', createPopup);
+  ratingButton.addEventListener('click', function () {
+    createPopup('rating');
+  });
+  contactButton.addEventListener('click', function () {
+    createPopup('contact');
+  });
 };
