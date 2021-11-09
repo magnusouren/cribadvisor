@@ -194,3 +194,20 @@ button:hover {
 #closePopup:after {
   transform: rotate(-45deg);
 }
+#popupContent {
+  margin-left: 20px;
+  margin-top: 20px;
+}
+#popupContent h3 {
+  font-size: 30px;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+.pop-up-data {
+  line-height: 80px;
+  font-size: 22px;
+}
+.pop-up-data b {
+  margin-right: 20px;
+  font-weight: 450;
+}
