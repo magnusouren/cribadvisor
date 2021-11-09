@@ -114,6 +114,7 @@ function sendRating(container) {
   container.innerHTML = '';
 
   let message = document.createElement('h3');
+  message.className = 'feedback-on-send';
   message.innerText = 'Takk for din vurdering!';
 
   container.appendChild(message);
