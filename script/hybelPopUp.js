@@ -46,6 +46,7 @@ function stars(parrent) {
   rowOfStars.className = 'row-of-stars';
   for (let i = 0; i < 5; i++) {
     let starImg = document.createElement('img');
+    starImg.className = 'rating-star';
     starImg.src = '/img/others/star.png';
     rowOfStars.appendChild(starImg);
   }
