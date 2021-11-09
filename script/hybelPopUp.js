@@ -50,7 +50,7 @@ function stars(parrent, type, count) {
   }
   parrent.appendChild(rowOfStars);
 }
-function createRating(container, dorm) {
+function createRating(container) {
   let header = document.createElement('h3');
   header.innerText = 'Gi vurdering:';
 
@@ -87,6 +87,13 @@ function createRating(container, dorm) {
 function inputStars(score, type) {
   console.log('type:' + type);
   console.log('score:' + score);
+  let divElement = document.getElementById(type);
+  divElement.innerHTML = '';
+
+  let description = document.createElement('b');
+  description.innerText = type.charAt(0).toUpperCase() + type.slice(1) + ':';
+  divElement.appendChild(description);
+  stars(divElement, type, score);
 
   //Tanken her er å bruke disse to verdiene til å printe ut like mange stjerner som score, i div-elementet med id: type
 }
@@ -105,7 +112,7 @@ function createContent(container, dorm, buttonName) {
   if (buttonName === 'contact') {
     createContact(container, dorm);
   } else if (buttonName === 'rating') {
-    createRating(container, dorm);
+    createRating(container);
     mouseOverRating();
   }
 }
