@@ -16,7 +16,7 @@
         // The location of Realfagsbygget
         const realfagsbygget = { lat: 63.415372, lng: 10.406507 };
         // The map, centered at Realfagsbygget
-        const map = new google.maps.Map(document.getElementById("map"), {
+        const map = new google.maps.Map(document.getElementById('map'), {
           zoom: 4,
           center: realfagsbygget,
         });
@@ -32,39 +32,33 @@
   <body>
     <nav id="navbar"></nav>
 
-    
-
-    <div id=circle_left></div>
-    <div id=circle_right></div>
-
-  
+    <div id="circle_left"></div>
+    <div id="circle_right"></div>
 
     <div id="Kontakt_oss">
       <h1>Kontakt oss</h1>
-      <input type="email" id="name" placeholder="Navn" required>
-      <input type="text" id="email" placeholder="E-mail" required>
+      <input type="email" id="name" placeholder="Navn" required />
+      <input type="text" id="email" placeholder="E-mail" required />
       <textarea id="message" placeholder="Melding" required></textarea>
-      <button type="submit" id="button" onclick="validateInput()">Send</button>
+      <button type="submit" id="button">Send</button>
       <!-- buttonm type="button">Send</button> -->
     </div>
-
-    
 
     <div id="besok_oss">
       <div id="map"></div>
       <div id="adresse">
         <h2>Besøk oss</h2>
-        <p>A4 Realfagsbygget
+        <p>A4 Realfagsbygget</p>
         <p>Høgskoleringen 5,</p>
-        <p>7034 Trondheim, </p>
+        <p>7034 Trondheim,</p>
         <p>Norway</p>
       </div>
     </div>
 
-    <div id=circle_bottom></div>
+    <div id="circle_bottom"></div>
 
-    <footer>CribAdvisor - 2021 </footer>
-      <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <footer>CribAdvisor - 2021</footer>
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
     <script
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDD67r9-hLPtpjGPoGNEhoKbFL1TfhGeQM&callback=initMap&libraries=&v=weekly"
       async

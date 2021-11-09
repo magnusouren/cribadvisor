@@ -1,4 +1,4 @@
-function validateInput() { 
+function validateInput() {
   const nameInput = document.getElementById('name').value;
   const emailInput = document.getElementById('email').value;
   const messageInput = document.getElementById('message').value;
@@ -8,13 +8,13 @@ function validateInput() {
   const validMessage = validateMessage(messageInput);
 
   if (validName && validEmail && validMessage) {
-    alert("Takk for din melding!")
+    alert('Takk for din melding!');
   }
 }
 
 function validateName(name) {
   if (name.length === 0) {
-    alert("Skriv inn navnet ditt");
+    alert('Skriv inn navnet ditt');
     return false;
   }
   return true;
@@ -25,7 +25,7 @@ function validateEmail(email) {
   const isEmail = emailRegex.test(email.toLowerCase());
 
   if (isEmail === false) {
-    alert("Skriv inn en godkjent email adresse");
+    alert('Skriv inn en godkjent email adresse');
     return false;
   }
   return true;
@@ -33,11 +33,14 @@ function validateEmail(email) {
 
 function validateMessage(message) {
   if (message.length === 0) {
-    alert("Skriv inn melding");
+    alert('Skriv inn melding');
     return false;
   } else if (message.length > 300) {
-    alert("Meldingen din er for lang");
+    alert('Meldingen din er for lang');
     return false;
   }
   return true;
 }
+
+const button = document.getElementById('button');
+button.addEventListener('click', validateInput);
