@@ -1,16 +1,27 @@
 import { createNewPopup, displayPopup } from './componentsPopup.js';
 import { getDormFromUrl } from './hybel.js';
 
+window.onload = function () {
+  let ratingButton = document.getElementById('ratingButton');
+  let contactButton = document.getElementById('contactButton');
+
+  ratingButton.addEventListener('click', function () {
+    createPopup('rating');
+  });
+  contactButton.addEventListener('click', function () {
+    createPopup('contact');
+  });
+};
+
 function createContentOr404(button) {
   const dorm = getDormFromUrl();
   let container = document.getElementById('popupContent');
 
   dorm ? createContent(container, dorm, button) : create404(container);
 }
+
 function createContact(container, dorm) {
-  let header = document.createElement('h3');
-  header.innerText = 'Kontakt:';
-  container.appendChild(header);
+  createHeader(container, 'Kontakt:');
 
   let phone = document.createElement('div');
   phone.className = 'pop-up-data';
@@ -41,6 +52,7 @@ function createContact(container, dorm) {
 function stars(parrent, type, count) {
   let rowOfStars = document.createElement('div');
   rowOfStars.className = 'row-of-stars';
+
   for (let i = 0; i < count; i++) {
     let starImg = document.createElement('img');
     starImg.className = 'rating-star';
@@ -48,46 +60,43 @@ function stars(parrent, type, count) {
     starImg.src = '/img/others/star.png';
     rowOfStars.appendChild(starImg);
   }
+
   parrent.appendChild(rowOfStars);
   mouseOverRating();
 }
-function createRating(container) {
-  let header = document.createElement('h3');
-  header.innerText = 'Gi vurdering:';
+function createTextAndStars(container, text, amountStars, stars) {
+  let div = document.createElement('div');
+  div.className = 'pop-up-data';
+  div.id = text;
 
-  let folka = document.createElement('div');
-  folka.className = 'pop-up-data';
-  folka.id = 'folka';
-  let folkaTekst = document.createElement('b');
-  folkaTekst.innerText = 'Folka:';
-  folka.appendChild(folkaTekst);
-  stars(folka, 'folka', 5);
+  let textNode = document.createElement('b');
+  textNode.innerText = text + ':';
 
-  let utseende = document.createElement('div');
-  utseende.className = 'pop-up-data';
-  utseende.id = 'utseende';
-  let utseendeTekst = document.createElement('b');
-  utseendeTekst.innerText = 'Utseende:';
-  utseende.appendChild(utseendeTekst);
-  stars(utseende, 'utseende', 5);
+  div.appendChild(textNode);
 
-  let beligenhet = document.createElement('div');
-  beligenhet.className = 'pop-up-data';
-  beligenhet.id = 'beligenhet';
-  let beligenhetTekst = document.createElement('b');
-  beligenhetTekst.innerText = 'Beligenhet:';
-  beligenhet.appendChild(beligenhetTekst);
-  stars(beligenhet, 'beligenhet', 5);
+  stars(div, text, amountStars);
 
+  container.appendChild(div);
+}
+function createButton(container) {
   let sendButton = document.createElement('button');
   sendButton.id = 'popup-button';
   sendButton.innerText = 'Send inn';
 
-  container.appendChild(header);
-  container.appendChild(folka);
-  container.appendChild(utseende);
-  container.appendChild(beligenhet);
   container.appendChild(sendButton);
+}
+function createHeader(container, text) {
+  let header = document.createElement('h3');
+  header.innerText = text;
+
+  container.appendChild(header);
+}
+function createRating(container) {
+  createHeader(container, 'Gi vurdering');
+  createTextAndStars(container, 'Folka', 5, stars);
+  createTextAndStars(container, 'Utseende', 5, stars);
+  createTextAndStars(container, 'Beligenhet', 5, stars);
+  createButton(container);
 }
 
 function inputStars(score, type) {
@@ -145,15 +154,3 @@ function createPopup(buttonName) {
     createContentOr404(buttonName);
   }
 }
-
-window.onload = function () {
-  let ratingButton = document.getElementById('ratingButton');
-  let contactButton = document.getElementById('contactButton');
-
-  ratingButton.addEventListener('click', function () {
-    createPopup('rating');
-  });
-  contactButton.addEventListener('click', function () {
-    createPopup('contact');
-  });
-};
