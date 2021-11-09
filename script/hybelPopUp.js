@@ -49,6 +49,7 @@ function stars(parrent, type, count) {
     rowOfStars.appendChild(starImg);
   }
   parrent.appendChild(rowOfStars);
+  mouseOverRating();
 }
 function createRating(container) {
   let header = document.createElement('h3');
@@ -90,8 +91,6 @@ function createRating(container) {
 }
 
 function inputStars(score, type) {
-  console.log('type:' + type);
-  console.log('score:' + score);
   let divElement = document.getElementById(type);
   divElement.innerHTML = '';
 
@@ -111,12 +110,28 @@ function mouseOverRating() {
     });
   });
 }
+function sendRating(container) {
+  container.innerHTML = '';
+
+  let message = document.createElement('h3');
+  message.innerText = 'Takk for din vurdering!';
+
+  container.appendChild(message);
+}
+function buttonEvtListener(container) {
+  let sendButton = document.getElementById('popup-button');
+
+  sendButton.addEventListener('click', function () {
+    sendRating(container);
+  });
+}
 function createContent(container, dorm, buttonName) {
   if (buttonName === 'contact') {
     createContact(container, dorm);
   } else if (buttonName === 'rating') {
     createRating(container);
     mouseOverRating();
+    buttonEvtListener(container);
   }
 }
 
