@@ -42,7 +42,31 @@ function createContact(container, dorm) {
   container.appendChild(email);
 }
 function createRating(container, dorm) {
-  container.innerHTML = 'Stars';
+  let header = document.createElement('h3');
+  header.innerText = 'Gi vurdering:';
+
+  let folka = document.createElement('div');
+  folka.className = 'pop-up-data';
+  let folkaTekst = document.createElement('b');
+  folkaTekst.innerText = 'Epost:';
+  folka.appendChild(folkaTekst);
+
+  let utseende = document.createElement('div');
+  utseende.className = 'pop-up-data';
+  let utseendeTekst = document.createElement('b');
+  utseendeTekst.innerText = 'Utseende:';
+  utseende.appendChild(utseendeTekst);
+
+  let beligenhet = document.createElement('div');
+  beligenhet.className = 'pop-up-data';
+  let beligenhetTekst = document.createElement('b');
+  beligenhetTekst.innerText = 'Beligenhet:';
+  beligenhet.appendChild(beligenhetTekst);
+
+  container.appendChild(header);
+  container.appendChild(folka);
+  container.appendChild(utseende);
+  container.appendChild(beligenhet);
 }
 
 function createContent(container, dorm, button) {
