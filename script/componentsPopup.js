@@ -35,7 +35,7 @@ function addCross(popup) {
 }
 function addContent(popup) {
   let content = document.createElement('div');
-  content.id = 'popupContent'; // Henvis til denne ID-en for å legge til innhold
+  content.id = 'popupContent';
 
   popup.appendChild(content);
 }
