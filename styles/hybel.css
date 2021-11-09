@@ -223,3 +223,7 @@ button:hover {
   right: 25px;
   bottom: 30px;
 }
+.feedback-on-send {
+  margin-top: 200px;
+  text-align: center;
+}
