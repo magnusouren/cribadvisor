@@ -41,9 +41,9 @@ function addContent(popup) {
 }
 
 function exitPopup(popup, background) {
-  let content = document.getElementById('popupContent');
+  let popupContent = document.getElementById('popupContent');
 
-  content.innerHTML = '';
+  popupContent.innerHTML = '';
   popup.style.display = 'none';
   background.style.display = 'none';
 }
