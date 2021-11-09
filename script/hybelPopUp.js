@@ -41,6 +41,16 @@ function createContact(container, dorm) {
   email.appendChild(hostEmail);
   container.appendChild(email);
 }
+function stars(parrent) {
+  let rowOfStars = document.createElement('div');
+  rowOfStars.className = 'row-of-stars';
+  for (let i = 0; i < 5; i++) {
+    let starImg = document.createElement('img');
+    starImg.src = '/img/others/star.png';
+    rowOfStars.appendChild(starImg);
+  }
+  parrent.appendChild(rowOfStars);
+}
 function createRating(container, dorm) {
   let header = document.createElement('h3');
   header.innerText = 'Gi vurdering:';
@@ -48,20 +58,23 @@ function createRating(container, dorm) {
   let folka = document.createElement('div');
   folka.className = 'pop-up-data';
   let folkaTekst = document.createElement('b');
-  folkaTekst.innerText = 'Epost:';
+  folkaTekst.innerText = 'Folka:';
   folka.appendChild(folkaTekst);
+  stars(folka);
 
   let utseende = document.createElement('div');
   utseende.className = 'pop-up-data';
   let utseendeTekst = document.createElement('b');
   utseendeTekst.innerText = 'Utseende:';
   utseende.appendChild(utseendeTekst);
+  stars(utseende);
 
   let beligenhet = document.createElement('div');
   beligenhet.className = 'pop-up-data';
   let beligenhetTekst = document.createElement('b');
   beligenhetTekst.innerText = 'Beligenhet:';
   beligenhet.appendChild(beligenhetTekst);
+  stars(beligenhet);
 
   container.appendChild(header);
   container.appendChild(folka);
