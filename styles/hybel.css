@@ -215,3 +215,11 @@ button:hover {
 .row-of-stars {
   line-height: 10px;
 }
+.row-of-stars img:hover {
+  filter: brightness(80%);
+}
+#popup-button {
+  position: absolute;
+  right: 25px;
+  bottom: 30px;
+}
