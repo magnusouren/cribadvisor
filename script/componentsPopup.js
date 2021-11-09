@@ -62,22 +62,6 @@ export function displayPopup() {
   background.style.display = 'block';
 }
 
-function createContent() {
-  // Bruk denne for å sette inn innhold
-  let popupContent = document.getElementById('popupContent');
-  // Det under denne linja kan fjernes, ment som inspirasjon til hvordan det kan gjøres
-
-  let h1 = document.createElement('h1');
-  h1.innerText = 'Kontakt';
-
-  let p = document.createElement('p');
-  p.innerText =
-    'Her kommer det tekst avhengig av hvilken hybel du vil kontakte';
-
-  popupContent.appendChild(h1);
-  popupContent.appendChild(p);
-}
-
 export function createNewPopup() {
   addBackground();
   let background = document.getElementById('popupBackground');
