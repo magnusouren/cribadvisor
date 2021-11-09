@@ -69,21 +69,21 @@ function createRating(container, dorm) {
   container.appendChild(beligenhet);
 }
 
-function createContent(container, dorm, button) {
-  if (button == 'contact') {
+function createContent(container, dorm, buttonName) {
+  if (buttonName == 'contact') {
     createContact(container, dorm);
-  } else if ((button = 'rating')) {
+  } else if ((buttonName = 'rating')) {
     createRating(container, dorm);
   }
 }
 
-function createPopup(button) {
+function createPopup(buttonName) {
   if (document.body.contains(document.getElementById('popupDiv'))) {
     displayPopup();
-    createContentOr404(button);
+    createContentOr404(buttonName);
   } else {
     createNewPopup();
-    createContentOr404(button);
+    createContentOr404(buttonName);
   }
 }
 
