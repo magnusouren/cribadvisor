@@ -1,99 +1,30 @@
-function getHeightOfContent() {
-  let body = document.body;
-  let html = document.documentElement;
+import { createNewPopup, displayPopup } from './componentsPopup.js';
+import { fetchData, slugifyText } from './common.js';
+function getDormFromUrl() {
+  const data = fetchData();
+  const queryString = window.location.search;
+  const urlParams = new URLSearchParams(queryString);
+  const dormName = urlParams.get('dormName');
 
-  var height = Math.max(
-    body.scrollHeight,
-    body.offsetHeight,
-    html.clientHeight,
-    html.scrollHeight,
-    html.offsetHeight
-  );
-  return height;
+  return data.find((dorm) => slugifyText(dorm.name) === dormName);
 }
 
-function addBackground() {
-  let background = document.createElement('div');
-  background.id = 'popupBackground';
-  background.style.height = getHeightOfContent() + 'px';
+function createContentOr404() {
+  const dorm = getDormFromUrl();
+  let container = document.getElementById('popupContent');
 
-  document.body.appendChild(background);
+  dorm ? createContent(container, dorm) : create404(container);
 }
 
-function addDiv() {
-  let div = document.createElement('div');
-  div.id = 'popupDiv';
-
-  document.body.appendChild(div);
-}
-
-function addCross(popup) {
-  let cross = document.createElement('a');
-  cross.id = 'closePopup';
-
-  popup.appendChild(cross);
-}
-function addContent(popup) {
-  let content = document.createElement('div');
-  content.id = 'popupContent'; // Henvis til denne ID-en for å legge til innhold
-
-  popup.appendChild(content);
-}
-
-function exitPopup(popup, background) {
-  let content = document.getElementById('popupContent');
-
-  content.innerHTML = '';
-  popup.style.display = 'none';
-  background.style.display = 'none';
-}
-
-function addEvtLstClosePopUp(cross, popup, background) {
-  cross.addEventListener('click', function () {
-    exitPopup(popup, background);
-  });
-}
-
-function displayPopup() {
-  let popup = document.getElementById('popupDiv');
-  let background = document.getElementById('popupBackground');
-
-  popup.style.display = 'block';
-  background.style.display = 'block';
-}
-
-function createContent() {
-  // Bruk denne for å sette inn innhold
-  let popupContent = document.getElementById('popupContent');
-  // Det under denne linja kan fjernes, ment som inspirasjon til hvordan det kan gjøres
-
-  let h1 = document.createElement('h1');
-  h1.innerText = 'Kontakt';
-
-  let p = document.createElement('p');
-  p.innerText = 'Her kommer det tekst avhengig av hvilken hybel du vil kontakte';
-
-  popupContent.appendChild(h1);
-  popupContent.appendChild(p);
-}
+function createContent(container, dorm) {}
 
 function createPopup() {
   if (document.body.contains(document.getElementById('popupDiv'))) {
     displayPopup();
-    createContent();
+    createContentOr404();
   } else {
-    addBackground();
-    let background = document.getElementById('popupBackground');
-
-    addDiv();
-    let popup = document.getElementById('popupDiv');
-
-    addCross(popup);
-    let cross = document.getElementById('closePopup');
-
-    addContent(popup);
-    addEvtLstClosePopUp(cross, popup, background);
-    createContent();
+    createNewPopup();
+    createContentOr404();
   }
 }
 
