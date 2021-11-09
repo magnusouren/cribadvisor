@@ -78,10 +78,15 @@ function createRating(container) {
   beligenhet.appendChild(beligenhetTekst);
   stars(beligenhet, 'beligenhet', 5);
 
+  let sendButton = document.createElement('button');
+  sendButton.id = 'popup-button';
+  sendButton.innerText = 'Send inn';
+
   container.appendChild(header);
   container.appendChild(folka);
   container.appendChild(utseende);
   container.appendChild(beligenhet);
+  container.appendChild(sendButton);
 }
 
 function inputStars(score, type) {
@@ -94,8 +99,6 @@ function inputStars(score, type) {
   description.innerText = type.charAt(0).toUpperCase() + type.slice(1) + ':';
   divElement.appendChild(description);
   stars(divElement, type, score);
-
-  //Tanken her er å bruke disse to verdiene til å printe ut like mange stjerner som score, i div-elementet med id: type
 }
 
 function mouseOverRating() {
