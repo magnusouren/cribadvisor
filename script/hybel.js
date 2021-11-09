@@ -1,6 +1,6 @@
 import { fetchData, slugifyText } from './common.js';
 
-function getDormFromUrl() {
+export function getDormFromUrl() {
   const data = fetchData();
   const queryString = window.location.search;
   const urlParams = new URLSearchParams(queryString);
