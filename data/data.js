@@ -21,6 +21,8 @@ export const data = [
       about:
         'YO! Jeg tilbyr fest, spillkveld og grillkveld. Alle er velkommen, håper du vil komme innom :)',
       image: 'img/kirkegata/isak.png',
+      phone: '123 45 678',
+      email: 'isak@cribadvisor.com',
     },
   },
   {
@@ -49,6 +51,8 @@ export const data = [
       about:
         'Kom og besøk oss på Møllenberg, vi er en hyggelig gjeng som gjerne ønsker besøk fra deg!',
       image: 'img/tale/tale.png',
+      phone: '222 33 444',
+      email: 'tale@cribadvisor.com',
     },
   },
   {
@@ -73,6 +77,8 @@ export const data = [
       about:
         'Hos oss er det alltid åpen dør for en liten fest, middag eller hva det skal være. Vi er 6 boys som tar livet som det faller seg og stresser ikke med noe',
       image: 'img/lerkendal/ouern.png',
+      phone: '910 03 564',
+      email: 'magnus@cribadvisor.com',
     },
   },
 ];

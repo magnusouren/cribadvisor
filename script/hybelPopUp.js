@@ -22,7 +22,7 @@ function createContact(container, dorm) {
   tlf.innerText = 'Tlf:';
 
   let hostNumber = document.createElement('span');
-  hostNumber.innerText = '22 22 55 55';
+  hostNumber.innerText = dorm.host.phone;
 
   phone.appendChild(tlf);
   phone.appendChild(hostNumber);
@@ -35,7 +35,7 @@ function createContact(container, dorm) {
   epost.innerText = 'Epost:';
 
   let hostEmail = document.createElement('span');
-  hostEmail.innerText = 'herkommeren@mail.com';
+  hostEmail.innerText = dorm.host.email;
 
   email.appendChild(epost);
   email.appendChild(hostEmail);
