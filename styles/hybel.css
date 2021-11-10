@@ -40,7 +40,7 @@ img.dorm-image {
 }
 
 .host-container p {
-  width: 500px;
+  max-width: 500px;
   font-size: 18px;
   margin-left: 125px;
 }
@@ -56,6 +56,37 @@ img.dorm-image {
   width: 100%;
   bottom: 0px;
   margin-bottom: 16px;
+}
+
+@media only screen and (max-width: 800px) {
+  section#container {
+    margin-left: 32px;
+    margin-right: 32px;
+  }
+
+  .host-container {
+    height: 100%;
+  }
+
+  .host-container p {
+    max-width: 300px;
+  }
+
+  .host-container .buttons-container {
+    position: relative;
+    display: block;
+    margin-top: 16px;
+  }
+
+  .buttons-container button {
+    margin: 0 auto;
+    margin-bottom: 16px;
+  }
+
+  .host-container hr {
+    position: relative;
+    display: block;
+  }
 }
 
 button {
@@ -115,6 +146,19 @@ button:hover {
   width: 30px;
 }
 
+@media only screen and (max-width: 500px) {
+  .about-container {
+    float: none;
+    margin: 0px;
+    margin-bottom: 96px;
+  }
+
+  .ratings-container {
+    float: none;
+    margin: 0px;
+  }
+}
+
 .figure-container {
   position: relative;
   max-width: 800px;
@@ -171,6 +215,7 @@ button:hover {
   background-color: white;
   border: solid 1px black;
 }
+
 #closePopup {
   position: absolute;
   right: 20px;
@@ -180,9 +225,11 @@ button:hover {
   opacity: 0.3;
   cursor: pointer;
 }
+
 #closePopup:hover {
   opacity: 1;
 }
+
 #closePopup:before,
 #closePopup:after {
   position: absolute;
@@ -192,33 +239,41 @@ button:hover {
   width: 2px;
   background-color: #333;
 }
+
 #closePopup:before {
   transform: rotate(45deg);
 }
+
 #closePopup:after {
   transform: rotate(-45deg);
 }
+
 #popupContent {
   margin-left: 20px;
   margin-top: 20px;
 }
+
 #popupContent h3 {
   font-size: 30px;
   letter-spacing: 1px;
   font-weight: 500;
   margin-bottom: 15px;
 }
+
 .pop-up-data {
   line-height: 50px;
   font-size: 22px;
 }
+
 .pop-up-data b {
   margin-right: 20px;
   font-weight: 450;
 }
+
 .row-of-stars {
   line-height: 10px;
 }
+
 .row-of-stars img:hover {
   filter: brightness(80%);
 }
@@ -227,11 +282,13 @@ button:hover {
   width: 30px;
   cursor: pointer;
 }
+
 #popup-button {
   position: absolute;
   right: 16px;
   bottom: 8px;
 }
+
 .feedback-on-send {
   margin-top: 200px;
   text-align: center;
