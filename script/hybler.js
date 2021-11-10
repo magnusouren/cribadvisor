@@ -1,4 +1,4 @@
-import { fetchData } from './common.js';
+import { data } from '../data/data.js';
 import {
   createDormImage,
   createDormTextContent,
@@ -19,8 +19,6 @@ function createDorm(dorm) {
 }
 
 function createListOfDorms() {
-  const data = fetchData();
-
   for (let i = 0; i < data.length; i++) {
     createDorm(data[i]);
   }

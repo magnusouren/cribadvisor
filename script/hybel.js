@@ -1,7 +1,7 @@
-import { fetchData, slugifyText } from './common.js';
+import { slugifyText } from './common.js';
+import { data } from '../data/data.js';
 
 export function getDormFromUrl() {
-  const data = fetchData();
   const queryString = window.location.search;
   const urlParams = new URLSearchParams(queryString);
   const dormName = urlParams.get('dormName');
