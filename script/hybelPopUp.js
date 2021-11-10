@@ -1,4 +1,4 @@
-import { createNewPopup, displayPopup } from './componentsPopup.js';
+import { createNewPopup, displayPopup } from './popupComponents.js';
 import { getDormFromUrl } from './hybel.js';
 
 window.onload = function () {
