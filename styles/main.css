@@ -7,6 +7,7 @@
 body {
   overflow-x: hidden;
 }
+
 footer {
   margin-top: 200px;
   width: 100%;
@@ -24,8 +25,24 @@ button {
   border: none;
   box-shadow: 0px 0px 4px #00000029;
   font-size: 18px;
+  min-width: 100px;
 }
 
 button:hover {
   cursor: pointer;
+}
+
+input,
+textarea {
+  display: block;
+  line-height: 50px;
+  padding-left: 10px;
+  width: 300px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border-width: 1.5px;
+  font-size: 20px;
+  border: 1px solid #e8e4e4;
+  background-color: white;
+  resize: none;
 }
