@@ -16,6 +16,7 @@ export function createDormRatings(container, ratings) {
 export function createDormImage(container, images) {
   let img = document.createElement('img');
   img.src = images[0].src;
+  img.alt = images[0].imageText;
   img.className = 'dorm-image';
   container.appendChild(img);
 }
