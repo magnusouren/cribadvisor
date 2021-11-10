@@ -2,6 +2,7 @@ import { slugifyText, getDormFromUrl } from '../common.js';
 import {
   createAboutSection,
   createDormImage,
+  createSlideshow,
   createDormName,
   createDormRatings,
   createHostSection,
@@ -19,6 +20,7 @@ function createDorm(container, dorm) {
   createDormName(container, dorm.name);
   createDormRatings(container, dorm.ratings);
   createDormImage(container, dorm.images);
+  createSlideshow(dorm.images);
   createHostSection(container, dorm.host);
   createAboutSection(container, dorm);
   createRatingSection(container, dorm.ratings);
