@@ -27,6 +27,7 @@ export function createHostSection(container, host) {
 
   let hostImage = document.createElement('img');
   hostImage.src = host.image;
+  hostImage.alt = host.name;
   hostContainer.appendChild(hostImage);
 
   let hostName = document.createElement('h2');
@@ -115,6 +116,7 @@ export function createRatings(ratingsContainer, name, numberOfStars) {
     for (let i = 0; i < numberOfStars; i++) {
       let starImg = document.createElement('img');
       starImg.src = 'img/others/star.png';
+      starImg.alt = 'Stjerne';
       ratingContainer.appendChild(starImg);
     }
 

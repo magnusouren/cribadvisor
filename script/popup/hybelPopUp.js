@@ -60,6 +60,7 @@ function stars(parrent, type, count) {
     starImg.className = 'rating-star';
     starImg.id = type + (i + 1);
     starImg.src = 'img/others/star.png';
+    starImg.alt = 'Stjerne';
     rowOfStars.appendChild(starImg);
   }
 
