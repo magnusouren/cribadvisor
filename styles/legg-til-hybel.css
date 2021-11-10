@@ -1,5 +1,5 @@
 /* Få liten tekst øverst sentrert og i liten kursiv skrift. */
-section p {
+section h2 {
   width: 50%;
   margin-left: 25%;
   margin-right: 25%;
@@ -7,9 +7,11 @@ section p {
   text-align: center;
   margin-top: 20px;
   color: #333;
+  font-weight: normal;
+  font-size: 16px;
 }
+
 article {
-  /* text-align: 100px; */
   width: 70%;
   margin-left: 15%;
   margin-right: 15%;
@@ -57,9 +59,11 @@ select {
 select:required:invalid {
   color: gray;
 }
+
 option[value=''][disabled] {
   display: none;
 }
+
 option {
   color: black;
 }
@@ -83,6 +87,7 @@ input {
   width: 50%;
   margin-left: 10%;
 }
+
 #picture {
   padding: 10px;
   width: 500px;
@@ -96,6 +101,7 @@ input {
     display: none;
   }
 }
+
 .add_image::-webkit-file-upload-button {
   visibility: hidden;
 }
@@ -136,6 +142,7 @@ input {
   right: 80px;
   z-index: -1;
 }
+
 #circle_underneath_right {
   background-color: #c2efb3;
   position: absolute;
