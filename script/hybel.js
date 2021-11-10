@@ -24,9 +24,8 @@ function create404(container) {
 }
 
 function createDormName(container, name) {
-  let dormName = document.createElement('h1');
+  let dormName = document.getElementById('top-text');
   dormName.innerHTML = name;
-  container.appendChild(dormName);
 }
 
 function createDormRatings(container, ratings) {
