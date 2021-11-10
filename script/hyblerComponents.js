@@ -68,7 +68,7 @@ export function createButton(container, dormName) {
 
   const slugifiedName = slugifyText(dormName);
   button.innerHTML = 'Se Hybel';
-  linkWrapper.href = `/hybel.html?dormName=${slugifiedName}`;
+  linkWrapper.href = `hybel.html?dormName=${slugifiedName}`;
 
   linkWrapper.appendChild(button);
   container.appendChild(linkWrapper);
