@@ -51,7 +51,7 @@ function createContact(container, dorm) {
   container.appendChild(email);
 }
 
-function stars(parrent, type, count) {
+function createStars(parrent, type, count) {
   let rowOfStars = document.createElement('div');
   rowOfStars.className = 'row-of-stars';
 
@@ -65,22 +65,20 @@ function stars(parrent, type, count) {
   }
 
   parrent.appendChild(rowOfStars);
-  mouseOverRating();
+  setStarEventListeners();
 }
 
-function createTextAndStars(container, text, amountStars, stars) {
-  let div = document.createElement('div');
-  div.className = 'pop-up-data';
-  div.id = text;
+function createTextAndStars(container, text, amountStars) {
+  let starsContainer = document.createElement('div');
+  starsContainer.className = 'pop-up-data';
+  starsContainer.id = text;
 
   let textNode = document.createElement('b');
   textNode.innerText = text + ':';
+  starsContainer.appendChild(textNode);
 
-  div.appendChild(textNode);
-
-  stars(div, text, amountStars);
-
-  container.appendChild(div);
+  container.appendChild(starsContainer);
+  createStars(starsContainer, text, amountStars);
 }
 
 function createButton(container) {
@@ -100,9 +98,9 @@ function createHeader(container, text) {
 
 function createRating(container) {
   createHeader(container, 'Gi vurdering');
-  createTextAndStars(container, 'Folka', 5, stars);
-  createTextAndStars(container, 'Utseende', 5, stars);
-  createTextAndStars(container, 'Beligenhet', 5, stars);
+  createTextAndStars(container, 'Folka', 5);
+  createTextAndStars(container, 'Utseende', 5);
+  createTextAndStars(container, 'Beligenhet', 5);
   createButton(container);
 }
 
@@ -113,10 +111,11 @@ function inputStars(score, type) {
   let description = document.createElement('b');
   description.innerText = type.charAt(0).toUpperCase() + type.slice(1) + ':';
   divElement.appendChild(description);
-  stars(divElement, type, score);
+
+  createStars(divElement, type, score);
 }
 
-function mouseOverRating() {
+function setStarEventListeners() {
   document.querySelectorAll('.rating-star').forEach((star) => {
     star.addEventListener('click', (event) => {
       let starId = star.id;
@@ -150,7 +149,7 @@ function createContent(container, dorm, buttonName) {
     createContact(container, dorm);
   } else if (buttonName === 'rating') {
     createRating(container);
-    mouseOverRating();
+    setStarEventListeners();
     buttonEvtListener(container);
   }
 }
