@@ -1,5 +1,5 @@
-import { createNewPopup, displayPopup } from './componentsPopup.js';
-import { getDormFromUrl } from './hybel.js';
+import { createNewPopup, displayPopup } from './popupComponents.js';
+import { getDormFromUrl } from '../common.js';
 
 window.onload = function () {
   let ratingButton = document.getElementById('ratingButton');
@@ -8,6 +8,7 @@ window.onload = function () {
   ratingButton.addEventListener('click', function () {
     createPopup('rating');
   });
+
   contactButton.addEventListener('click', function () {
     createPopup('contact');
   });
@@ -49,6 +50,7 @@ function createContact(container, dorm) {
   email.appendChild(hostEmail);
   container.appendChild(email);
 }
+
 function stars(parrent, type, count) {
   let rowOfStars = document.createElement('div');
   rowOfStars.className = 'row-of-stars';
@@ -64,6 +66,7 @@ function stars(parrent, type, count) {
   parrent.appendChild(rowOfStars);
   mouseOverRating();
 }
+
 function createTextAndStars(container, text, amountStars, stars) {
   let div = document.createElement('div');
   div.className = 'pop-up-data';
@@ -78,6 +81,7 @@ function createTextAndStars(container, text, amountStars, stars) {
 
   container.appendChild(div);
 }
+
 function createButton(container) {
   let sendButton = document.createElement('button');
   sendButton.id = 'popup-button';
@@ -85,12 +89,14 @@ function createButton(container) {
 
   container.appendChild(sendButton);
 }
+
 function createHeader(container, text) {
   let header = document.createElement('h3');
   header.innerText = text;
 
   container.appendChild(header);
 }
+
 function createRating(container) {
   createHeader(container, 'Gi vurdering');
   createTextAndStars(container, 'Folka', 5, stars);
@@ -119,6 +125,7 @@ function mouseOverRating() {
     });
   });
 }
+
 function sendRating(container) {
   container.innerHTML = '';
 
@@ -128,6 +135,7 @@ function sendRating(container) {
 
   container.appendChild(message);
 }
+
 function buttonEvtListener(container) {
   let sendButton = document.getElementById('popup-button');
 
@@ -135,6 +143,7 @@ function buttonEvtListener(container) {
     sendRating(container);
   });
 }
+
 function createContent(container, dorm, buttonName) {
   if (buttonName === 'contact') {
     createContact(container, dorm);

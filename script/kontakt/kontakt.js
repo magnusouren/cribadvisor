@@ -17,6 +17,7 @@ function validateName(name) {
     alert('Skriv inn navnet ditt');
     return false;
   }
+
   return true;
 }
 
@@ -28,6 +29,7 @@ function validateEmail(email) {
     alert('Skriv inn en godkjent email adresse');
     return false;
   }
+
   return true;
 }
 
@@ -39,8 +41,11 @@ function validateMessage(message) {
     alert('Meldingen din er for lang');
     return false;
   }
+
   return true;
 }
 
-const button = document.getElementById('button');
-button.addEventListener('click', validateInput);
+window.onload = function () {
+  const button = document.getElementById('button');
+  button.addEventListener('click', validateInput);
+};

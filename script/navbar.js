@@ -1,6 +1,6 @@
 const navbar = document.getElementById('navbar');
 
-const listelements = [
+const navLinks = [
   {
     source: 'img/others/logo-white.png',
     text: 'CribAdvisor',
@@ -22,43 +22,44 @@ const listelements = [
     link: 'legg-til-hybel.html',
   },
 ];
-//legger til bilde og tekst til nav-bar
+
+// Legger til bilde og tekst til nav-bar
 let a = document.createElement('a');
 a.href = 'index.html';
 let container = document.createElement('div');
 
 let logo = document.createElement('img');
-logo.src = listelements[0].source;
+logo.src = navLinks[0].source;
 container.appendChild(logo);
 
 let logoText = document.createElement('p');
-let textNode = document.createTextNode(listelements[0].text);
+let textNode = document.createTextNode(navLinks[0].text);
 logoText.appendChild(textNode);
 container.appendChild(logoText);
 
 a.appendChild(container);
 navbar.appendChild(a);
 
-//lager et ul-element i navbar
+// Lager et ul-element i navbar
 let ulist = document.createElement('ul');
 navbar.appendChild(ulist);
 
-//legger til alle sidene som li-elementer i ul-elementet
-for (let i = 1; i < listelements.length; i++) {
+// Legger til alle sidene som li-elementer i ul-elementet
+for (let i = 1; i < navLinks.length; i++) {
   let list = document.createElement('li');
   let a = document.createElement('a');
-  let content = document.createTextNode(listelements[i].name);
-  a.href = listelements[i].link;
+  let content = document.createTextNode(navLinks[i].name);
+  a.href = navLinks[i].link;
   a.appendChild(content);
   list.appendChild(a);
   ulist.appendChild(list);
 }
 
-//henter filnavnet på aktiv fil
+// Henter filnavnet på aktiv fil
 const pathname = window.location.pathname;
 
-//setter stil på aktiv lenke
-for (let i = 1; i < listelements.length; i++) {
+// Setter stil på aktiv lenke
+for (let i = 1; i < navLinks.length; i++) {
   let aTagHref = document
     .getElementById('navbar')
     .getElementsByTagName('a')

@@ -1,4 +1,4 @@
-import { slugifyText } from './common.js';
+import { slugifyText } from '../common.js';
 
 export function createDormImage(container, images) {
   let img = document.createElement('img');

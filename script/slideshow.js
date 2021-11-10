@@ -9,7 +9,6 @@ function startImageSlideshow() {
   }, 5000);
 
   // Kaller på funksjon til å bytte bilde hvert 5. sekund
-
   setTimeout(
     () =>
       setInterval(() => {

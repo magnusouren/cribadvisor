@@ -1,48 +1,26 @@
-import { slugifyText } from './common.js';
-import { data } from '../data/data.js';
+import { slugifyText } from '../common.js';
+import { data } from '../../data/data.js';
 
-export function getDormFromUrl() {
-  const queryString = window.location.search;
-  const urlParams = new URLSearchParams(queryString);
-  const dormName = urlParams.get('dormName');
-
-  return data.find((dorm) => slugifyText(dorm.name) === dormName);
-}
-
-function createDormOr404() {
-  const dorm = getDormFromUrl();
-  let container = document.getElementById('container');
-
-  dorm ? createDorm(container, dorm) : create404(container);
-}
-
-function create404(container) {
-  let heading = document.createElement('h1');
-  heading.innerHTML = 'Finner ikke hybelen :(';
-
-  container.appendChild(heading);
-}
-
-function createDormName(container, name) {
+export function createDormName(container, name) {
   let dormName = document.getElementById('top-text');
   dormName.innerHTML = name;
 }
 
-function createDormRatings(container, ratings) {
+export function createDormRatings(container, ratings) {
   let dormRatings = document.createElement('p');
   dormRatings.className = 'dorm-ratings';
   dormRatings.innerHTML = `${ratings.numberOfRatings} vurderinger`;
   container.appendChild(dormRatings);
 }
 
-function createDormImage(container, images) {
+export function createDormImage(container, images) {
   let img = document.createElement('img');
   img.src = images[0].src;
   img.className = 'dorm-image';
   container.appendChild(img);
 }
 
-function createHostSection(container, host) {
+export function createHostSection(container, host) {
   let hostContainer = document.createElement('div');
   hostContainer.className = 'host-container';
 
@@ -79,7 +57,7 @@ function createHostSection(container, host) {
   container.appendChild(hostContainer);
 }
 
-function createAboutSection(container, dorm) {
+export function createAboutSection(container, dorm) {
   const { address, capasity, events, ratings } = dorm;
   let aboutSectionContainer = document.createElement('div');
   aboutSectionContainer.className = 'about-container';
@@ -119,7 +97,7 @@ function createAboutSection(container, dorm) {
   container.appendChild(aboutSectionContainer);
 }
 
-function createRatings(ratingsContainer, name, numberOfStars) {
+export function createRatings(ratingsContainer, name, numberOfStars) {
   if (name !== 'numberOfRatings') {
     let engToNorMap = [
       { eng: 'people', nor: 'Folka' },
@@ -143,7 +121,7 @@ function createRatings(ratingsContainer, name, numberOfStars) {
   }
 }
 
-function createRatingSection(container, ratings) {
+export function createRatingSection(container, ratings) {
   let ratingSectionContainer = document.createElement('div');
 
   let ratingHeading = document.createElement('h2');
@@ -156,14 +134,3 @@ function createRatingSection(container, ratings) {
 
   container.appendChild(ratingSectionContainer);
 }
-
-function createDorm(container, dorm) {
-  createDormName(container, dorm.name);
-  createDormRatings(container, dorm.ratings);
-  createDormImage(container, dorm.images);
-  createHostSection(container, dorm.host);
-  createAboutSection(container, dorm);
-  createRatingSection(container, dorm.ratings);
-}
-
-createDormOr404();
