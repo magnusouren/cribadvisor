@@ -30,7 +30,8 @@ function createContact(container, dorm) {
   let tlf = document.createElement('b');
   tlf.innerText = 'Tlf:';
 
-  let hostNumber = document.createElement('span');
+  let hostNumber = document.createElement('a');
+  hostNumber.setAttribute('href', 'tel:' + dorm.host.phone);
   hostNumber.innerText = dorm.host.phone;
 
   phone.appendChild(tlf);
@@ -43,7 +44,8 @@ function createContact(container, dorm) {
   let epost = document.createElement('b');
   epost.innerText = 'Epost:';
 
-  let hostEmail = document.createElement('span');
+  let hostEmail = document.createElement('a');
+  hostEmail.setAttribute('href', 'mailto:' + dorm.host.email);
   hostEmail.innerText = dorm.host.email;
 
   email.appendChild(epost);
