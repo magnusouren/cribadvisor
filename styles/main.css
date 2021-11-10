@@ -18,7 +18,8 @@ footer {
   font-weight: 80;
 }
 
-button {
+button,
+.button {
   background-color: #253257;
   color: white;
   padding: 12px 16px;
@@ -26,6 +27,7 @@ button {
   box-shadow: 0px 0px 4px #00000029;
   font-size: 18px;
   min-width: 100px;
+  text-decoration: none;
 }
 
 button:hover {
