@@ -1,5 +1,5 @@
-import { slugifyText } from './common.js';
-import { data } from '../data/data.js';
+import { slugifyText } from '../common.js';
+import { data } from '../../data/data.js';
 
 export function createDormName(container, name) {
   let dormName = document.getElementById('top-text');
