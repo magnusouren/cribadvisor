@@ -1,6 +1,6 @@
 import { fetchData, slugifyText } from './common.js';
 
-function getDormFromUrl() {
+export function getDormFromUrl() {
   const data = fetchData();
   const queryString = window.location.search;
   const urlParams = new URLSearchParams(queryString);
@@ -64,10 +64,12 @@ function createHostSection(container, host) {
 
   let contactButton = document.createElement('button');
   contactButton.innerHTML = 'Kontakt';
+  contactButton.id = 'contactButton';
   buttonsContainer.appendChild(contactButton);
 
   let giveRatingButton = document.createElement('button');
   giveRatingButton.innerHTML = 'Gi vurdering';
+  giveRatingButton.id = 'ratingButton';
   buttonsContainer.appendChild(giveRatingButton);
 
   hostContainer.appendChild(buttonsContainer);
