@@ -1,5 +1,5 @@
 import { createNewPopup, displayPopup } from './popupComponents.js';
-import { getDormFromUrl } from './hybel.js';
+import { getDormFromUrl } from './common.js';
 
 window.onload = function () {
   let ratingButton = document.getElementById('ratingButton');
