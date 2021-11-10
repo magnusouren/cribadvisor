@@ -9,6 +9,7 @@ function getHeightOfContent() {
     html.scrollHeight,
     html.offsetHeight
   );
+
   return height;
 }
 
@@ -33,6 +34,7 @@ function addCross(popup) {
 
   popup.appendChild(cross);
 }
+
 function addContent(popup) {
   let content = document.createElement('div');
   content.id = 'popupContent';
