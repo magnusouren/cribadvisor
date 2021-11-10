@@ -160,7 +160,7 @@ button:hover {
 }
 
 #popupDiv {
-  height: 60%;
+  height: 400px;
   width: 50%;
   position: absolute;
   left: 25%;
@@ -175,6 +175,7 @@ button:hover {
   width: 32px;
   height: 32px;
   opacity: 0.3;
+  cursor: pointer;
 }
 #closePopup:hover {
   opacity: 1;
@@ -218,10 +219,15 @@ button:hover {
 .row-of-stars img:hover {
   filter: brightness(80%);
 }
+
+.rating-star {
+  width: 30px;
+  cursor: pointer;
+}
 #popup-button {
   position: absolute;
-  right: 25px;
-  bottom: 30px;
+  right: 16px;
+  bottom: 8px;
 }
 .feedback-on-send {
   margin-top: 200px;
