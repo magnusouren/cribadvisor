@@ -1,8 +1,6 @@
-import { fetchData } from './common.js';
+import { data } from '../data/data.js';
 
 function startImageSlideshow() {
-  // Henter ut data fra js-fil ved hjelp av funksjon i common
-  const data = fetchData();
   let slideshow = document.getElementById('imgSlide');
 
   let counter = 1;
