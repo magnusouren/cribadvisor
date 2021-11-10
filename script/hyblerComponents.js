@@ -63,6 +63,7 @@ export function createDormTextContent(
 
 export function createButton(container, dormName) {
   let linkWrapper = document.createElement('a');
+  linkWrapper.className = 'dorm-link';
   let button = document.createElement('button');
 
   const slugifiedName = slugifyText(dormName);
