@@ -59,7 +59,7 @@ function stars(parrent, type, count) {
     let starImg = document.createElement('img');
     starImg.className = 'rating-star';
     starImg.id = type + (i + 1);
-    starImg.src = '/img/others/star.png';
+    starImg.src = 'img/others/star.png';
     rowOfStars.appendChild(starImg);
   }
 

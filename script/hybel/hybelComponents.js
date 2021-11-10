@@ -113,7 +113,7 @@ export function createRatings(ratingsContainer, name, numberOfStars) {
 
     for (let i = 0; i < numberOfStars; i++) {
       let starImg = document.createElement('img');
-      starImg.src = '/img/others/star.png';
+      starImg.src = 'img/others/star.png';
       ratingContainer.appendChild(starImg);
     }
 
