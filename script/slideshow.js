@@ -24,6 +24,7 @@ function startImageSlideshow() {
 
 function swapImg(data, slideshow) {
   slideshow.src = data.images[0].src;
+  slideshow.alt = data.images[0].imageText;
   fadeIn(slideshow);
 }
 
