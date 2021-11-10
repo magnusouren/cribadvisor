@@ -15,7 +15,7 @@ nav div {
   font-size: 24px;
 }
 nav img {
-  height: 8vh;
+  width: 40px;
 }
 nav ul {
   display: flex;
