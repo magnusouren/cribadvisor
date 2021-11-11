@@ -68,12 +68,16 @@ export const data = [
     },
     images: [
       {
-        src: 'img/lerkendal/stue.png',
-        imageText: 'Vår vakre stue',
+        src: 'img/lerkendal/lerkendal.jpg',
+        imageText: 'Leiligheten sett utenifra',
+      },
+      {
+        src: 'img/lerkendal/stue.jpg',
+        imageText: 'Stue med gode sittemuligheter',
       },
     ],
     host: {
-      name: 'Magnus Ouern',
+      name: 'Magnus Ouren',
       about:
         'Hos oss er det alltid åpen dør for en liten fest, middag eller hva det skal være. Vi er 6 boys som tar livet som det faller seg og stresser ikke med noe',
       image: 'img/lerkendal/ouern.png',

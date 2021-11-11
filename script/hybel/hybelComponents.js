@@ -1,5 +1,6 @@
 import { slugifyText } from '../common.js';
 import { data } from '../../data/data.js';
+import { slideshow } from './hybelSlideshow.js';
 
 export function createDormName(container, name) {
   let dormName = document.getElementById('top-text');
@@ -14,11 +15,41 @@ export function createDormRatings(container, ratings) {
 }
 
 export function createDormImage(container, images) {
+  let slideDiv = document.createElement('div');
+  slideDiv.id = 'dorm-slideshow';
+
   let img = document.createElement('img');
   img.src = images[0].src;
   img.alt = images[0].imageText;
   img.className = 'dorm-image';
-  container.appendChild(img);
+  img.id = 'slideshow-image';
+
+  slideDiv.appendChild(img);
+  container.appendChild(slideDiv);
+}
+
+export function createSlideshow(images) {
+  let slideDiv = document.getElementById('dorm-slideshow');
+
+  let caption = document.createElement('div');
+  caption.id = 'slideCaption';
+  caption.innerText = images[0].imageText;
+
+  let nextImg = document.createElement('div');
+  nextImg.className = 'slideArrow';
+  nextImg.id = 'nextImg';
+  nextImg.addEventListener('click', () => slideshow(images, 1));
+  nextImg.innerText = '\u2192';
+
+  let prevImg = document.createElement('div');
+  prevImg.className = 'slideArrow';
+  prevImg.id = 'prevImg';
+  prevImg.addEventListener('click', () => slideshow(images, -1));
+  prevImg.innerText = '\u2190';
+
+  slideDiv.appendChild(caption);
+  slideDiv.appendChild(nextImg);
+  slideDiv.appendChild(prevImg);
 }
 
 export function createHostSection(container, host) {
