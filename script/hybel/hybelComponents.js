@@ -22,11 +22,12 @@ export function createDormImage(container, images) {
   img.src = images[0].src;
   img.alt = images[0].imageText;
   img.className = 'dorm-image';
-  img.id = 'slideImg';
+  img.id = 'slideshow-image';
 
   slideDiv.appendChild(img);
   container.appendChild(slideDiv);
 }
+
 export function createSlideshow(images) {
   let slideDiv = document.getElementById('dorm-slideshow');
 
@@ -37,17 +38,13 @@ export function createSlideshow(images) {
   let nextImg = document.createElement('div');
   nextImg.className = 'slideArrow';
   nextImg.id = 'nextImg';
-  nextImg.addEventListener('click', function () {
-    slideshow(images, 1);
-  });
+  nextImg.addEventListener('click', () => slideshow(images, 1));
   nextImg.innerText = '\u2192';
 
   let prevImg = document.createElement('div');
   prevImg.className = 'slideArrow';
   prevImg.id = 'prevImg';
-  prevImg.addEventListener('click', function () {
-    slideshow(images, -1);
-  });
+  prevImg.addEventListener('click', () => slideshow(images, -1));
   prevImg.innerText = '\u2190';
 
   slideDiv.appendChild(caption);

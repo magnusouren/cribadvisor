@@ -1,8 +1,8 @@
 export function slideshow(images, direction) {
-  let slideImg = document.getElementById('slideImg');
+  let slideshowImage = document.getElementById('slideshow-image');
   let caption = document.getElementById('slideCaption');
 
-  let longImgSrc = slideImg.src;
+  let longImgSrc = slideshowImage.src;
   let splitSrc = longImgSrc.split('/');
   let imgSrc = splitSrc[splitSrc.length - 1];
 
@@ -15,27 +15,28 @@ export function slideshow(images, direction) {
   }
 
   if (direction === 1) {
-    nextImageSlideshow(images, index, slideImg, caption);
+    switchToNextImage(images, index, slideshowImage, caption);
   } else if (direction === -1) {
-    previousImageSlideshow(images, index, slideImg, caption);
+    switchToPrevImage(images, index, slideshowImage, caption);
   }
 }
 
-function nextImageSlideshow(images, index, slideImg, caption) {
+function switchToNextImage(images, index, slideshowImage, caption) {
   if (index + 1 === images.length) {
-    slideImg.src = images[0].src;
+    slideshowImage.src = images[0].src;
     caption.innerText = images[0].imageText;
   } else {
-    slideImg.src = images[index + 1].src;
+    slideshowImage.src = images[index + 1].src;
     caption.innerText = images[index + 1].imageText;
   }
 }
-function previousImageSlideshow(images, index, slideImg, caption) {
+
+function switchToPrevImage(images, index, slideshowImage, caption) {
   if (index === 0) {
-    slideImg.src = images[images.length - 1].src;
+    slideshowImage.src = images[images.length - 1].src;
     caption.innerText = images[images.length - 1].imageText;
   } else {
-    slideImg.src = images[index - 1].src;
+    slideshowImage.src = images[index - 1].src;
     caption.innerText = images[index - 1].imageText;
   }
 }
