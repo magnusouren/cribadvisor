@@ -26,7 +26,7 @@ article h1 {
   font-size: 32px;
 }
 
-article input {
+/* article input {
   display: block;
   line-height: 50px;
   padding-left: 10px;
@@ -37,7 +37,7 @@ article input {
   font-size: 20px;
   border: 1px solid #e8e4e4;
   background-color: white;
-}
+} */
 
 select {
   appearance: none;
