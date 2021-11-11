@@ -1,4 +1,4 @@
-import { slideshow } from './hybelSlideshow.js';
+import { handleSlideshowButtonClick } from './hybelSlideshow.js';
 
 /**
  * Funksjon som setter navn på hybelen
