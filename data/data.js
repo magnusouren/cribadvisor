@@ -120,7 +120,8 @@ export const data = [
     ],
     host: {
       name: 'Ingrid Rinker',
-      about: 'Hei hei hei bare å komme på besøk her er alle venner.',
+      about:
+        'Hei hei hei bare å komme på besøk her er alle venner. Vi er tre stykker som bor her.',
       image: 'img/dronningens-gate/ingrid.png',
       phone: '123 45 678',
       email: 'ingrid@cribadvisor.com',
