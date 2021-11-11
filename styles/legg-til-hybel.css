@@ -80,7 +80,7 @@ label {
 }
 
 input {
-  color: #333;
+  color: gray;
 }
 
 #inputs {
@@ -109,12 +109,12 @@ input {
 .add_image::before {
   content: 'Legg til fil';
   display: inline-block;
-  background-color: rgb(141 199 194);
   padding: 5px 8px;
   outline: none;
   white-space: nowrap;
   font-weight: 700;
   font-size: 10pt;
+  color: gray;
 }
 
 .add_image:active::before {
