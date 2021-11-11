@@ -48,3 +48,9 @@ textarea {
   background-color: white;
   resize: none;
 }
+
+h1 {
+  font-size: 40px;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
