@@ -1,3 +1,8 @@
+/**
+ * Denne fila inneholder all data om hyblene
+ * vi viser på siden vår. Dataen er lagret som
+ * objekter i et array kalt data.
+ */
 export const data = [
   {
     name: 'Ravens Nest',
@@ -15,6 +20,10 @@ export const data = [
         src: 'img/kirkegata/grille.jpg',
         imageText: 'Grillen fyrt opp og klar for mat',
       },
+      {
+        src: 'img/kirkegata/middag.png',
+        imageText: 'Her har vi laget god mat',
+      },
     ],
     host: {
       name: 'Isak Solheim',
@@ -27,7 +36,7 @@ export const data = [
   },
   {
     name: 'Tales crib',
-    address: 'Kirkegata 46A',
+    address: 'Nedre Møllenbergate 46A',
     capasity: 8,
     events: ['Fest', 'Middag', 'Quiz'],
     ratings: {
@@ -68,17 +77,59 @@ export const data = [
     },
     images: [
       {
-        src: 'img/lerkendal/stue.png',
-        imageText: 'Vår vakre stue',
+        src: 'img/lerkendal/lerkendal.jpg',
+        imageText: 'Leiligheten sett utenifra',
+      },
+      {
+        src: 'img/lerkendal/stue.jpg',
+        imageText: 'Stue med gode sittemuligheter',
       },
     ],
     host: {
-      name: 'Magnus Ouern',
+      name: 'Magnus Ouren',
       about:
         'Hos oss er det alltid åpen dør for en liten fest, middag eller hva det skal være. Vi er 6 boys som tar livet som det faller seg og stresser ikke med noe',
       image: 'img/lerkendal/ouern.png',
       phone: '910 03 564',
       email: 'magnus@cribadvisor.com',
+    },
+  },
+  {
+    name: 'Kongecribben',
+    address: 'Dronningens Gate 30',
+    capasity: 30,
+    events: ['Fest', 'Nach', 'Vors'],
+    ratings: {
+      numberOfRatings: 12,
+      people: 5,
+      appearence: 3,
+      location: 5,
+    },
+    images: [
+      {
+        src: 'img/dronningens-gate/stua.jpg',
+        imageText: 'Stua klar for besøk',
+      },
+      {
+        src: 'img/dronningens-gate/spise.jpeg',
+        imageText: 'Spise spise spise',
+      },
+      {
+        src: 'img/dronningens-gate/vindu.jpeg',
+        imageText: 'Her kan vi se ut',
+      },
+      {
+        src: 'img/dronningens-gate/kjokken.jpg',
+        imageText: 'Liker å lage mat her',
+      },
+    ],
+    host: {
+      name: 'Ingrid Rinker',
+      about:
+        'Hei hei hei bare å komme på besøk her er alle venner. Vi er tre stykker som bor her.',
+      image: 'img/dronningens-gate/ingrid.png',
+      phone: '123 45 678',
+      email: 'ingrid@cribadvisor.com',
     },
   },
 ];
