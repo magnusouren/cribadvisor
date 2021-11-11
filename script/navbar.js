@@ -38,6 +38,7 @@ let container = document.createElement('div');
 // Lager logo og putter det i containeren
 let logo = document.createElement('img');
 logo.src = navLinks[0].source;
+logo.alt = 'Logo';
 container.appendChild(logo);
 
 // Lager logo tekst og putter det inn i containeren
