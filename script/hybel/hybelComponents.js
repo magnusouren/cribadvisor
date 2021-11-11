@@ -1,5 +1,3 @@
-import { slugifyText } from '../common.js';
-import { data } from '../../data/data.js';
 import { slideshow } from './hybelSlideshow.js';
 
 export function createDormName(container, name) {
