@@ -108,12 +108,14 @@ export function createDormTextContent(
  * @param {string} dormName Navn på hybel
  */
 export function createButton(container, dormName) {
-  let linkButton = document.createElement('a');
-  linkButton.className = 'dorm-link button';
+  let linkWrapper = document.createElement('a');
+  linkWrapper.className = 'dorm-link';
+  let button = document.createElement('button');
 
   const slugifiedName = slugifyText(dormName);
-  linkButton.innerHTML = 'Se Hybel';
-  linkButton.href = `hybel.html?dormName=${slugifiedName}`;
+  button.innerHTML = 'Se Hybel';
+  linkWrapper.href = `hybel.html?dormName=${slugifiedName}`;
 
-  container.appendChild(linkButton);
+  linkWrapper.appendChild(button);
+  container.appendChild(linkWrapper);
 }
