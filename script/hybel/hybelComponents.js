@@ -60,13 +60,17 @@ export function createSlideshow(images) {
   let nextImg = document.createElement('div');
   nextImg.className = 'slideArrow';
   nextImg.id = 'nextImg';
-  nextImg.addEventListener('click', () => slideshow(images, 1));
+  nextImg.addEventListener('click', () =>
+    handleSlideshowButtonClick(images, 1)
+  );
   nextImg.innerText = '\u2192'; // Unicode for pil til høyre
 
   let prevImg = document.createElement('div');
   prevImg.className = 'slideArrow';
   prevImg.id = 'prevImg';
-  prevImg.addEventListener('click', () => slideshow(images, -1));
+  prevImg.addEventListener('click', () =>
+    handleSlideshowButtonClick(images, -1)
+  );
   prevImg.innerText = '\u2190'; // Unicode for pil til venstre
 
   slideDiv.appendChild(caption);
