@@ -85,4 +85,41 @@ export const data = [
       email: 'magnus@cribadvisor.com',
     },
   },
+  {
+    name: 'Kongecribben',
+    address: 'Dronningens Gate 30',
+    capasity: 30,
+    events: ['Fest', 'Nach', 'Vors'],
+    ratings: {
+      numberOfRatings: 12,
+      people: 5,
+      appearence: 3,
+      location: 5,
+    },
+    images: [
+      {
+        src: 'img/dronningens-gate/stua.jpg',
+        imageText: 'Stua klar for besøk',
+      },
+      {
+        src: 'img/dronningens-gate/spise.jpeg',
+        imageText: 'Spise spise spise',
+      },
+      {
+        src: 'img/dronningens-gate/vindu.jpeg',
+        imageText: 'Her kan vi se ut',
+      },
+      {
+        src: 'img/dronningens-gate/kjokken.jpg',
+        imageText: 'Liker å lage mat her',
+      },
+    ],
+    host: {
+      name: 'Ingrid Rinker',
+      about: 'Hei hei hei bare å komme på besøk her er alle venner.',
+      image: 'img/dronningens-gate/ingrid.png',
+      phone: '123 45 678',
+      email: 'ingrid@cribadvisor.com',
+    },
+  },
 ];
