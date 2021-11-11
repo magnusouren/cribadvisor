@@ -23,33 +23,40 @@
     <article>
       <div id="inputs">
         <h1>Legg til din hybel</h1>
-        <input type="text" id="name" placeholder="Navn" />
-        <input type="text" id="adress" placeholder="Adresse" />
 
-        <div class="dropdown_list">
-          <div class="select">
-            <select name="search_categories" id="search_categories" required>
-              <option value="" disabled selected>Kategori</option>
-              <option value="2">Middag</option>
-              <option value="3">Vors</option>
-              <option value="4">Fest</option>
-              <option value="5">Nach</option>
-              <option value="6">Chillekveld</option>
-            </select>
+        <form>
+          <input type="text" id="name" placeholder="Navn" required />
+          <input type="text" id="adress" placeholder="Adresse" required />
+
+          <div class="dropdown_list">
+            <div class="select">
+              <select name="search_categories" id="search_categories" required>
+                <option value="" disabled selected>Kategori</option>
+                <option value="2">Middag</option>
+                <option value="3">Vors</option>
+                <option value="4">Fest</option>
+                <option value="5">Nach</option>
+                <option value="6">Chillekveld</option>
+              </select>
+            </div>
           </div>
-        </div>
 
-        <p>Når kan du ha besøk?</p>
-        <input type="date" id="visit_time" />
+          <p>Når kan du ha besøk?</p>
+          <input type="date" id="visit_time" required />
 
-        <div>Legg til bilder av din hybel</div>
+          <div>Legg til bilder av din hybel</div>
 
-        <input type="file" class="add_image" />
+          <input type="file" class="add_image" required />
 
-        <button type="submit" id="send_form">Send</button>
+          <button type="submit" id="send_form">Send</button>
+        </form>
       </div>
       <div>
-        <img id="picture" src="img/others/nidaros.jpeg" alt="Bilde av Nidarosdomen" />
+        <img
+          id="picture"
+          src="img/others/nidaros.jpeg"
+          alt="Bilde av Nidarosdomen"
+        />
       </div>
     </article>
 
