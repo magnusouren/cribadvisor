@@ -1,4 +1,4 @@
-import { slugifyText, getDormFromUrl } from '../common.js';
+import { getDormFromUrl } from '../common.js';
 import {
   createAboutSection,
   createDormImage,
