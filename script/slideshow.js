@@ -10,7 +10,7 @@ import { data } from '../data/data.js';
  * blir bildet endret på og containeren fader inn igjen.
  */
 function startImageSlideshow() {
-  let slideshow = document.getElementById('imgSlide'); // Henter html element med id imgSlide
+  let slideshow = document.getElementById('imgSlide');
 
   setInterval(() => {
     fadeOut(slideshow); // Kaller fadeOut funksjonen hvert 5. sekund
@@ -25,7 +25,7 @@ function startImageSlideshow() {
         swapImg(data[counter], slideshow);
 
         // Øker counter eller setter tilbake til 0 hvis lengden er for lang
-        counter == data.length ? (counter = 0) : counter++;
+        counter + 1 == data.length ? (counter = 0) : counter++;
       }, 5000),
     800
   );
