@@ -1,3 +1,8 @@
+/**
+ * Funksjon som regner ut og returnerer høyde på siden
+ *
+ * @return {number} Høyde på siden
+ */
 function getHeightOfContent() {
   let body = document.body;
   let html = document.documentElement;
