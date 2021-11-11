@@ -1,3 +1,8 @@
+/**
+ * Denne fila inneholder all data om hyblene
+ * vi viser på siden vår. Dataen er lagret som
+ * objekter i et array kalt data.
+ */
 export const data = [
   {
     name: 'Ravens Nest',
@@ -31,7 +36,7 @@ export const data = [
   },
   {
     name: 'Tales crib',
-    address: 'Kirkegata 46A',
+    address: 'Nedre Møllenbergate 46A',
     capasity: 8,
     events: ['Fest', 'Middag', 'Quiz'],
     ratings: {
