@@ -15,6 +15,10 @@ export const data = [
         src: 'img/kirkegata/grille.jpg',
         imageText: 'Grillen fyrt opp og klar for mat',
       },
+      {
+        src: 'img/kirkegata/middag.png',
+        imageText: 'Her har vi laget god mat',
+      },
     ],
     host: {
       name: 'Isak Solheim',
